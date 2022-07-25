@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MetaWorks
+title: MetaWorks: A multi-marker metabarcode pipeline
 ---
 
 <!---[![GitHub Repo stars](https://img.shields.io/github/stars/nicolas-van/bootstrap-4-github-pages?style=social)](https://github.com/nicolas-van/bootstrap-4-github-pages)
