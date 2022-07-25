@@ -7,7 +7,7 @@ title: MetaWorks: A multi-marker metabarcode pipeline
 
 A [Bootstrap 4](https://getbootstrap.com/) template project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).--->
 
-MetaWorks: A multi-marker metabarcode pipeline
+MetaWorks: A multi-marker metabarcode pipeline xxx
 
 * A full Bootstrap 4 theme usable both on Github Pages and with a standalone Jekyll.
 * Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
