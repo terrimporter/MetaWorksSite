@@ -2784,6 +2784,7 @@ a.text-dark:hover, a.text-dark:focus { color: #576263 !important; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
+.page-content { margin-right: 80px; margin-left: 80px; margin-top: 40px; margin-bottom: 40px; }
 .page-content img { max-width: 100%; }
 
 .bg-primary .navbar-nav .show > .nav-link, .bg-primary .navbar-nav .nav-link.active, .bg-primary .navbar-nav .nav-link:hover, .bg-primary .navbar-nav .nav-link:focus { color: #18bc9c !important; }
