@@ -8,7 +8,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav me-auto">
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}
@@ -17,9 +17,6 @@
           </li>
           {%- endif -%}
         {% endfor -%}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ site.github.repository_url }}">Fork me on Github</a>
-        </li>
       </ul>
     </div>
   </div>
