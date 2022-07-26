@@ -1,40 +1,10 @@
 
 <div class="py-5 border-top">
   <div class="container">
-
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
-
-    <div class="row">
-
-      <div class="col-sm">
-        <ul class="list-unstyled">
-          <li>
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-          </li>
-          {%- if site.email -%}
-            <li>
-              <a href="mailto:{{ site.email }}">
-                {{ site.email }}
-              </a>
-            </li>
-          {%- endif -%}
-        </ul>
-      </div>
-
-
-      <div class="col-sm text-right">
-        <p>{{- site.description | escape -}}</p>
-
-        <p>
-          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
-        </p>
-        <p>
-          <a href="https://github.com/nicolas-van/bootstrap-4-github-pages"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/nicolas-van/bootstrap-4-github-pages?style=social"></a>
-        <p>
+  	<div class="col-sm text-right">
+    	<p>This site is maintained by Teresita M. Porter (terrimporter AT gmail DOT com)</p>
+		<p>Documentation License: <a href="https://creativecommons.org/licenses/by/4.0">CC-BY 4.0</a>
+		</p>
       </div>
 
     </div>
