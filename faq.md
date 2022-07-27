@@ -5,6 +5,7 @@ permalink: /faq/
 ---
 
 <h1>Frequently Asked Questions</h1>
+<br>
 
 ### Installing Conda
 
