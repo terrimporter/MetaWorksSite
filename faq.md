@@ -12,48 +12,52 @@ Conda is an open source package and environment management system.  Miniconda is
 
 Install miniconda as follows:
 
-```linux
-# Download miniconda3
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+<pre>
+    <code>
+        # Download miniconda3
+        wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
-# Install miniconda3 and initialize
-sh Miniconda3-latest-Linux-x86_64.sh
+        # Install miniconda3 and initialize
+        sh Miniconda3-latest-Linux-x86_64.sh
 
-# Add conda to your PATH, ex. to ~/bin
-cd ~/bin
-ln -s ~/miniconda3/bin/conda conda
+        # Add conda to your PATH, ex. to ~/bin
+        cd ~/bin
+        ln -s ~/miniconda3/bin/conda conda
 
-# Activate conda method 1 (working in a container)
-source ~/miniconda3/bin/activate MetaWorks_v1.10.0
+        # Activate conda method 1 (working in a container)
+        source ~/miniconda3/bin/activate MetaWorks_v1.10.0
 
-# Activate conda method 2
-conda activate MetaWorks_v1.10.0
-```
+        # Activate conda method 2
+        conda activate MetaWorks_v1.10.0
+    </code>
+</pre>
 
 ### Checking program versions
 
 Ensure the program versions in the environment are being used.
 
-```linux
-# Create conda environment from file.  Only need to do this once.
-conda env create -f environment.yml
+<pre>
+    <code>
+        # Create conda environment from file.  Only need to do this once.
+        conda env create -f environment.yml
 
-# activate the environment
-conda activate MetaWorks_v1.10.0
+        # activate the environment
+        conda activate MetaWorks_v1.10.0
 
-# list all programs available in the environment at once
-conda list > programs.list
+        # list all programs available in the environment at once
+        conda list > programs.list
 
-# you can check that key programs in the conda environment are being used (not locally installed versions)
-which SeqPrep
-which cutadapt
-which vsearch
-which perl
+        # you can check that key programs in the conda environment are being used (not locally installed versions)
+        which SeqPrep
+        which cutadapt
+        which vsearch
+        which perl
 
-# you can also check their version numbers one at a time instead of running 'conda list'
-cutadapt --version
-vsearch --version
-```
+        # you can also check their version numbers one at a time instead of running 'conda list'
+        cutadapt --version
+        vsearch --version
+    </code>
+</pre>
 
 Version numbers are also tracked in the snakefile.
 
@@ -65,36 +69,44 @@ If you have an older version of GLIBC (on Centos6), then you may be missing the 
 
 Create a symbolic link to the library:
 
-```linux
-cd ~/miniconda3/envs/MetaWorks_v1.10.0/lib
-ln -s ../glibc-2.14/lib/libc.so.6 libc.so.6
-```
+<pre>
+    <code>
+        cd ~/miniconda3/envs/MetaWorks_v1.10.0/lib
+        ln -s ../glibc-2.14/lib/libc.so.6 libc.so.6
+    </code>
+</pre>
 
 Create the shell script file LD_PATH.sh in the following location to set the environment variable: ~/miniconda3/envs/MetaWorks_v1.10.0/etc/conda/activate.d/LD_PATH.sh
 
 Put the following text in the LD_PATH.sh file:
 
-```linux
-export LD_LIBRARY_PATH_CONDA_BACKUP=$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
-```
+<pre>
+    <code>
+        export LD_LIBRARY_PATH_CONDA_BACKUP=$LD_LIBRARY_PATH
+        export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
+    </code>
+</pre>
 
 Create the file LD_PATH.sh in the following location to unset the environment variable:  
 ~/miniconda3/envs/MetaWorks_v1.10.0/etc/conda/deactivate.d/LD_PATH.sh
 
 Put the following text in the LD_PATH.sh file:
 
-```linux
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH_CONDA_BACKUP
-```
+<pre>
+    <code>
+        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH_CONDA_BACKUP
+    </code>
+</pre>
 
 Deactivate then reactivate the environment.
 
 Test ORFfinder:
 
-```linux
-ORFfinder
-```
+<pre>
+    <code>
+        ORFfinder
+    </code>
+</pre>
 
 #### Resolving libnghttp2 errors
 
@@ -104,27 +116,33 @@ Create the shell script file LD_PATH.sh in the following location to set the env
 
 Put the following text in the LD_PATH.sh file:
 
-```linux
-export LD_LIBRARY_PATH_CONDA_BACKUP=$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
-```
+<pre>
+    <code>
+        export LD_LIBRARY_PATH_CONDA_BACKUP=$LD_LIBRARY_PATH
+        export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
+    </code>
+</pre>
 
 Create the file LD_PATH.sh in the following location to unset the environment variable:  
 ~/miniconda3/envs/MetaWorks_v1.10.0/etc/conda/deactivate.d/LD_PATH.sh
 
 Put the following text in the LD_PATH.sh file:
 
-```linux
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH_CONDA_BACKUP
-```
+<pre>
+    <code>
+        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH_CONDA_BACKUP
+    </code>
+</pre>
 
 Deactivate then reactivate the environment.
 
 Test ORFfinder:
 
-```linux
-ORFfinder
-```
+<pre>
+    <code>
+        ORFfinder
+    </code>
+</pre>
 
 ### Use the bold.hmm with the pseudogene removal pipeline
 
@@ -134,19 +152,23 @@ Ensure that bold.hmm as well as the indexed files (bold.hmm.h3p, bold.hmm.h3m, b
 
 Sometimes it necessary to rename raw data files in batches.  I use Perl-rename (Gergely, 2018) that is available at https://github.com/subogero/rename not linux rename.  I prefer the Perl implementation so that you can easily use regular expressions.  I first run the command with the -n flag so you can review the changes without making any actual changes.  If you're happy with the results, re-run without the -n flag.
 
-```linux
-rename -n 's/PATTERN/NEW PATTERN/g' *.gz
-```
+<pre>
+    <code>
+        rename -n 's/PATTERN/NEW PATTERN/g' *.gz
+    </code>
+</pre>
 
 ### Symbolic links
 
 Symbolic links are like shortcuts or aliases that can also be placed in your ~/bin directory that point to files or programs that reside elsewhere on your system.  So long as those scripts are executable (e.x. chmod 755 script.plx) then the shortcut will also be executable without having to type out the complete path or copy and pasting the script into the current directory.
 
-```linux
-ln -s /path/to/target/directory shortcutName
-ln -s /path/to/target/directory fileName
-ln -s /path/to/script/script.sh commandName
-```
+<pre>
+    <code>
+        ln -s /path/to/target/directory shortcutName
+        ln -s /path/to/target/directory fileName
+        ln -s /path/to/script/script.sh commandName
+    </code>
+</pre>
 
 ### Prevent errors caused by lost network connections
 
@@ -154,26 +176,30 @@ Large jobs with many fastq.gz files can take a while to run.  To prevent unexpec
 
 1. You can use nohup (no hangup).
 
-```linux
-nohup snakemake --jobs 24 --snakefile snakefile --configfile config.yaml
-```
+<pre>
+    <code>
+        nohup snakemake --jobs 24 --snakefile snakefile --configfile config.yaml
+    </code>
+</pre>
 
 2. You can use screen.
 
-```linux
-# to start a screen session
-screen
-ctrl+a+c
-conda activate MetaWorks_v1.10.0
-snakemake --jobs 24 --snakefile snakefile --configfile config.yaml
-ctrl+a+d
+<pre>
+    <code>
+        # to start a screen session
+        screen
+        ctrl+a+c
+        conda activate MetaWorks_v1.10.0
+        snakemake --jobs 24 --snakefile snakefile --configfile config.yaml
+        ctrl+a+d
 
-# to list all screen session ids, look at top of the list
-screen -ls
+        # to list all screen session ids, look at top of the list
+        screen -ls
 
-# to re-enter a screen session to watch job progress or view error messages
-screen -r session_id
-```
+        # to re-enter a screen session to watch job progress or view error messages
+        screen -r session_id
+    </code>
+</pre>
 
 3. You can submit your job to the queuing system if you use one.
 
@@ -181,10 +207,12 @@ screen -r session_id
 
 The results.csv file is the final file in the MetaWorks pipeline.  An ESV table (also known as an OTU table or pivot table) can be created in Excel or R.  In R, changing the results.csv file from a wider to a longer tabular format can be done using different libraries.
 
-```linux
-# R using reshape2 library
-ESVtable <- reshape2::dcast(df, SampleName ~ GlobalESV, value.var = "ESVsize", fun.aggregate = sum)
-```
+<pre>
+    <code>
+        # R using reshape2 library
+        ESVtable <- reshape2::dcast(df, SampleName ~ GlobalESV, value.var = "ESVsize", fun.aggregate = sum)
+    </code>
+</pre>
 
 ### How to filter pseudogenes for taxa with different genetic codes
 

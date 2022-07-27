@@ -131,89 +131,105 @@ The final output file is results.csv and it has been formatted to specify ESVs f
 
 1. This pipeline includes a conda environment that provides most of the programs needed to run this pipeline (SNAKEMAKE, SEQPREP, CUTADAPT, VSEARCH, etc.).
 
-```linux
-# Create the environment from the provided environment.yml file.  Only need to do this step once.
-conda env create -f environment.yml
+<pre>
+  <code>
+    # Create the environment from the provided environment.yml file.  Only need to do this step once.
+    conda env create -f environment.yml
 
-# Activate the environment
-conda activate MetaWorks_v1.10.0
+    # Activate the environment
+    conda activate MetaWorks_v1.10.0
 
-# On the GPSC activate using source
-source ~/miniconda/bin/activate MetaWorks_v1.10.0
-```
+    # On the GPSC activate using source
+    source ~/miniconda/bin/activate MetaWorks_v1.10.0
+  </code>
+</pre>
 
 2. The RDP classifier comes with the training sets to classify 16S, fungal LSU or ITS rDNA.  To classify other markers using custom-trained RDP sets, obtain these from GitHub using Table 1 as a guide .  Take note of where the rRNAclassifier.properties file is as this needs to be added to the config.yaml .
 
-```linux
-RDP:
-    t: "/path/to/CO1Classifier/v4/mydata_trained/rRNAClassifier.properties"
-```
+<pre>
+  <code>
+    RDP:
+        t: "/path/to/CO1Classifier/v4/mydata_trained/rRNAClassifier.properties"
+  </code>
+</pre>
 
 3. If doing pseudogene filtering, then download and install the NCBI ORFfinder
 
 The pipeline requires ORFfinder 0.4.3 available from the NCBI at ftp://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/ORFfinder/linux-i64/ .  This program should be downloaded, made executable, and put in your conda environment path (ex. ~/miniconda/envs/MetaWorks_v1.10.0/bin).
 
-```linux
-# go to your conda environment bin
-cd ~/miniconda3/envs/MetaWorks_v1.10.0/bin/.
+<pre>
+  <code>
+    # go to your conda environment bin
+    cd ~/miniconda3/envs/MetaWorks_v1.10.0/bin/.
 
-# download ORFfinder
-wget ftp://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/ORFfinder/linux-i64/ORFfinder.gz
+    # download ORFfinder
+    wget ftp://ftp.ncbi.nlm.nih.gov/genomes/TOOLS/ORFfinder/linux-i64/ORFfinder.gz
 
-# decompress
-gunzip ORFfinder.gz
+    # decompress
+    gunzip ORFfinder.gz
 
-# make executable
-chmod a+x ORFfinder
-```
+    # make executable
+    chmod a+x ORFfinder
+  </code>
+</pre>
 
 Run the program to test that it works:
 
-```linux
-ORFfinder
-```
+<pre>
+  <code>
+    ORFfinder
+  </code>
+</pre>
 
 If you get an error that requries newer GLIBC libraries (libc.so.6) or if you get an error that requires libnghttp2 then follow the instructions at [Add libraries for ORFfinder](#add-libraries-for-orffinder).
 
 4. In most cases, your raw paired-end Illumina reads can go into a directory called 'data' which should be placed in the same directory as the other files that come with this pipeline.
 
-```linux
-# Create a new directory to hold your raw data
-mkdir data
-```
+<pre>
+  <code>
+    # Create a new directory to hold your raw data
+    mkdir data
+  </code>
+</pre>
 
 5. Please go through the config.yaml file and edit directory names, filename patterns, etc. as necessary to work with your filenames.
 
 6. Run Snakemake by indicating the number of jobs or cores that are available to run the whole pipeline.  
 
-```linux
-snakemake --jobs 24 --snakefile snakefile --configfile config.yaml
-```
+<pre>
+  <code>
+    snakemake --jobs 24 --snakefile snakefile --configfile config.yaml
+  </code>
+</pre>
 
 7. When you are done, deactivate the conda environment:
 
-```linux
-conda deactivate
-```
+<pre>
+  <code>
+    conda deactivate
+  </code>
+</pre>
 
 ## Quick start example using COI test data
 
 This MetaWorks quick start assumes that you have already installed the CO1 Classifier available from https://github.com/terrimporter/CO1Classifier .  If you have not already done so, load the CO1 Classifier by following the quickstart instructions on the CO1 Classifier GitHub page.  It also assumes that you already have conda installed, otherwise see [Prepare your environment to run the pipeline](#prepare-your-environment-to-run-the-pipeline).
 
-```linux
-# download latest version of MetaWorks
-wget https://github.com/terrimporter/MetaWorks/releases/download/v1.10.0/MetaWorks1.9.5.zip
-unzip MetaWorks1.9.5.zip
-cd MetaWorks1.9.5
+<pre>
+  <code>
+    # download latest version of MetaWorks
+    wget https://github.com/terrimporter/MetaWorks/releases/download/v1.10.0/MetaWorks1.9.5.zip
+    unzip MetaWorks1.9.5.zip
+    cd MetaWorks1.9.5
 
-# edit config_testing_COI_data.yaml file to customize path to CO1v4 classifier properties file (line 131)
+    # edit config_testing_COI_data.yaml file to customize path to CO1v4 classifier properties file (line 131)
 
-# create the latest conda environment and activate it
-conda env create -f environment.yml
-conda activate MetaWorks_v1.10.0
+    # create the latest conda environment and activate it
+    conda env create -f environment.yml
+    conda activate MetaWorks_v1.10.0
 
-# run the pipeline on the COI test data
-snakemake --jobs 1 --configfile config_testing_COI_data.yaml --snakefile snakefile_ESV
-```
+    # run the pipeline on the COI test data
+    snakemake --jobs 1 --configfile config_testing_COI_data.yaml --snakefile snakefile_ESV
+  </code>
+</pre>
 
 Once you have the results.csv file, results can be imported into R for further analysis.  If you need an ESV table for downstream analysis this can be generated in R as well [How to create an ESV table](#how-to-create-an-esv-table).
