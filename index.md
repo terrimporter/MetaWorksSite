@@ -3,6 +3,10 @@ page.title: "MetaWorks"
 layout: default
 ---
 
+<p align="center">
+  <img src="./images/MetaWorksLogo.jpg" width="750"/>
+</p>
+
 <h1> Why MetaWorks? </h1>
 
 <br>MetaWorks comes with a conda environment file MetaWorks_v1.10.0 that should be activated before running the pipeline.  Conda is an environment and package manager (Anaconda, 2016).  The environment file contains most of the programs and dependencies needed to run MetaWorks.  If pseudogene filtering will be used, then the NCBI ORFfinder program will also need to be installed.  Additional RDP-trained reference sets may need to be downloaded if the reference set needed is not already built in to the RDP classifier (see Table 1 below).
