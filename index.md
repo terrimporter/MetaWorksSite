@@ -11,7 +11,7 @@ Snakemake is a python-based workflow manager (Koster and Rahmann, 2012) and it r
 
 **Fig 1.  Using a conda environment helps to quickly gather programs and dependencies used by MetaWorks.**.
 
-<img src="/images/conda_env.png" width="500">
+![](images/conda_env.png)
 
 The configuration file is edited by the user to specify directory names, indicate the sample and read fields from the sequence filenames, and specify other required pipeline parameters such as primer sequences, marker name, and whether or not pseudogene filtering should be run.
 
