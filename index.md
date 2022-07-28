@@ -5,32 +5,45 @@ layout: default
 
 <p align="center">
   <img src="./images/MetaWorksLogo.jpg" width="750"/>
-</p>
+</p><br>
 
-<br>
-<h1> Why MetaWorks? </h1>
+<h2> Why MetaWorks? </h2>
 
-<br>MetaWorks comes with a conda environment file MetaWorks_v1.10.0 that should be activated before running the pipeline.  Conda is an environment and package manager (Anaconda, 2016).  The environment file contains most of the programs and dependencies needed to run MetaWorks.  If pseudogene filtering will be used, then the NCBI ORFfinder program will also need to be installed.  Additional RDP-trained reference sets may need to be downloaded if the reference set needed is not already built in to the RDP classifier (see Table 1 below).
+<h5 class="text-info">Free and open-source software</h5>
+<p>MetaWorks runs at the command-line on linux-64.  The pipeline strings together popular open-source free software tools to process demultiplexed Illumina paired-end reads such as SeqPrep (St. John, 2016), CutAdapt (Martin, 2011), VSEARCH (Rognes, Flouri, Nichols, Quince, & Mahé, 2016), and the RDP Classifier (Wang, Garrity, Tiedje, & Cole, 2007).</p>
 
-Snakemake is a python-based workflow manager (Koster and Rahmann, 2012) and it requires three sets of files to run the any one of the workflows described described in the next section (Fig 1).
+<h5 class="text-info">Versioned workflows to improve reproducibility</h5>
 
-**Fig 1.  Using a conda environment helps to quickly gather programs and dependencies used by MetaWorks.**.
+<p>MetaWorks is versioned and available from <a href="https://github.com/terrimporter/MetaWorks">GitHub.</a></p>
 
-<img src="./images/conda_env.png" width="750">
+<h5 class="text-info">Harmonized Conda processing environment</h5>
 
-The configuration file is edited by the user to specify directory names, indicate the sample and read fields from the sequence filenames, and specify other required pipeline parameters such as primer sequences, marker name, and whether or not pseudogene filtering should be run.
+<p>MetaWorks comes with a conda environment file that should be activated before running the pipeline. Conda is an open-source environment and package manager (Anaconda, 2016). The environment file contains most of the programs and dependencies needed to run MetaWorks. If pseudogene filtering will be used, then the NCBI ORFfinder program will also need to be installed.  Additional RDP-trained reference sets may need to be downloaded if the reference set needed is not already built in to the RDP classifier.</p> 
 
-The snakefile describes the pipeline itself and normally does not need to be edited in any way (Fig 2).  
+<h5 class="text-info">Uses Snakemake for scalable processing</h5>
 
-**Fig 2. The snakefile describes the programs used, the settings, and the order in which to run commands.**<br>
-The pipeline takes care of any reformatting needed when moving from one step to another.  In addition to the final results file, a summary of statistics and log files are also available for major steps in the pipeline.
+<p>Snakemake is a Python-based workflow manager (Koster and Rahmann, 2012) that strings together workflow-steps and distributes these jobs across a high performance computing platform to efficiently manage computational resources.  Interrupted jobs can be re-started following the last successful step.</p>
 
-<img src="./images/dataflow.png" width="600">
+<h5 class="text-info">Generates either exact sequence variants and/or operational taxonomic units</h5>
 
+<p>MetaWorks offers workflows for generating exact sequence variants (zero-radius OTUS) and/or operational taxonomic units using a 97% identity cutoff using VSEARCH.</p> 
 
-The pipeline begins with raw paired-end Illumina MiSeq fastq.gz files.  Reads are paired.  Primers are trimmed.  All the samples are pooled for a global analysis.  Reads are dereplicated, denoised, and chimeric sequences are removed producing a reference set of denoised exact sequence variants (ESVs). At this step, the pipeline diverges into several paths:  an ITS specific dataflow, a regular dataflow, and a pseudogene filtering dataflow.  For ITS sequences, flanking rRNA gene regions are removed then they are taxonomically assigned.  For the regular pipeline, the denoised ESVs are taxonomically assigned using the RDP classifier.  If a protein coding marker is being processed you have the option to filter out putative pseudogenes (Porter and Hajibabaei, 2021).  The result is a report containing a list of ESVs for each sample, with read counts, and taxonomic assignments with a measure of bootstrap support (Fig 3).
+<h5 class="text-info">Supports popular metabarcode markers</h5>
 
-**Fig 3. The RDP classifier produces a measure of confidence for taxonomic assignments at each rank.**  
-Results can be filtered by bootstrap support values to reduce false-positive assignments.  The appropriate cutoffs to use for filtering will depend on the marker/classifier used, query length, and taxonomic rank.  See links in Table 1 for classifier-specific cutoffs to ensure 95-99% accuracy.
+<p>MetaWorks was specifically developed to handle different types of metabarcodes from ribosomal RNA genes + spacers to protein coding genes.  Unique marker considerations, such as the removal of conserved rRNA genes from ITS sequences and putative pseudogenes from COI is supported.  Our integrated pseudogene-filtering approaches can be used when processing protein-coding metabarcodes has been <a href="https://link.springer.com/article/10.1186/s12859-021-04180-x">published.</a></p>
 
-<img src="./images/taxonomic_assignments.png" width="600">
+<h5 class="text-info">Developed to support projects that cut across taxon lines!</h5>  
+
+<p>Our pipelines have been around, in one form or another, since before the terms metabarcoding and eDNA were coined.  As we know, ‘best practice’ is a moving target in this field.  MetaWorks is based on ‘best practices’ from the fields of microbial and fungal molecular ecology and strives to accommodate the needs of the animal metabarcode community.  We are driven by the need to make metabarcode bioinformatic processing both scalable and tractable within reasonable timeframes.  This pipeline is in active development to keep up with improvements in the underlying programs and reference sequence databases.</p> 
+
+<p>MetaWorks has been used as a part of the <a href="https://stream-dna.com/">STREAM</a> and <a href="https://www.canada.ca/en/environment-climate-change/services/biodiversity/ecobiomics.html">EcoBiomics</a> projects to process multi-marker metabarcode datasets from freshwater benthos, water, and soil.</p> 
+
+<h2>Citing Metaworks</h2>
+
+<p>If you use this dataflow or any of the provided scripts, please cite the MetaWorks preprint:</p> 
+
+<p>Porter, T.M., Hajibabaei, M. 2020. METAWORKS: A flexible, scalable bioinformatic pipeline for multi-marker biodiversity assessments. BioRxiv, doi: https://doi.org/10.1101/2020.07.14.202960.</p>
+
+<p>If you use the pseudogene filtering methods, please cite the pseudogene publication:</p> 
+
+<p>Porter, T.M., & Hajibabaei, M. (2021). Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets. BMC Bioinformatics, 22: 256.</p>
