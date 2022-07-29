@@ -11,9 +11,9 @@ We have provided a small set of COI paired-end Illumina MiSeq files for this tut
 <h2>Sections:</h2>
 <h5><a href="#step1">Prepare your environment for the pipeline</a></h5>
 <h5><a href="#step2">Run MetaWorks using the COI testing data provided</a></h5>
-<h5><a href="#step3">Prepare your environment for the pipeline</a></h5>
+<h5><a href="#step3">Analyze the output</a></h5>
 <br>
-<a id="step1">**Prepare your environment for the pipeline.**</a>
+<h5 class="text-info"><a id="step1">Prepare your environment for the pipeline.</a></h5>
 
 Begin by downloading the latest MetaWorks release available at https://github.com/terrimporter/MetaWorks/releases/tag/v1.10.0 by using wget from the command line:
 <pre><code># download the pipeline
@@ -83,7 +83,7 @@ mkdir ~/bin
 mv ORFfinder ~/bin/.
 </code></pre>
 
-<a id="step2">**Run MetaWorks using the COI testing data provided.**</a>
+<h5 class="text-info"><a id="step2">Run MetaWorks using the COI testing data provided.</a></h5>
 
 The config_testing_COI_data.yaml file has been 'preset' to work with the COI_data files in the testing folder. You will, however, still need to add the path to the trained COI classifier and save your changes.
 
@@ -99,7 +99,7 @@ Then you should be ready to run the MetaWorks pipeline on the testing data.
 snakemake --jobs 2 --snakefile snakefile --configfile config_testing_COI_data.yaml
 </code></pre>
 
-<a id="step3">**Analyze the output.**</a>
+<h5 class="text-info"><a id="step3">Analyze the output.</a></h5>
 
 The final output file is called results.csv . The results are for the COI-BR5 amplicon. This can be imported into R for bootstrap support filtering, pivot table creation, normalization, vegan analysis, etc. There are also a number of other output files in the stats directory showing the total number of reads processed at each step as well as the sequence lengths. Log files are also available for the dereplication, denoising, and chimera removal steps.
 
