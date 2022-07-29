@@ -26,11 +26,19 @@ layout: default
 
 <h5 class="text-info">Generates either exact sequence variants and/or operational taxonomic units</h5>
 
-<p>MetaWorks offers workflows for generating exact sequence variants (zero-radius OTUS) and/or operational taxonomic units using a 97% identity cutoff using VSEARCH.</p> 
+<p>MetaWorks offers workflows for generating exact sequence variants (ESVs) and/or operational taxonomic units (OTUs) using a 97% identity cutoff using VSEARCH.  Workflows are also available for single-read processing for when the amplicon reads do not overlap.</p>
+
+<p align="center">
+  <img src="./images/workflows.jpg" width="750"/>
+</p>
 
 <h5 class="text-info">Supports popular metabarcode markers</h5>
 
-<p>MetaWorks was specifically developed to handle different types of metabarcodes from ribosomal RNA genes + spacers to protein coding genes.  Unique marker considerations, such as the removal of conserved rRNA genes from ITS sequences and putative pseudogenes from COI is supported.  Our integrated pseudogene-filtering approaches can be used when processing protein-coding metabarcodes has been <a href="https://link.springer.com/article/10.1186/s12859-021-04180-x">published.</a></p>
+<p>MetaWorks was specifically developed to handle different types of metabarcodes from ribosomal RNA genes + spacers to protein coding genes.  Unique marker considerations, such as the removal of conserved rRNA genes from ITS sequences and putative pseudogenes from COI is supported.  A detailed description of our pseudogene-filtering approaches for protein-coding metabarcode markers has been <a href="https://link.springer.com/article/10.1186/s12859-021-04180-x">published</a>.</p>
+
+<p align="center">
+  <img src="./images/workflows_by_markertype.jpg" width="550"/>
+</p>
 
 <h5 class="text-info">Developed to support projects that cut across taxon lines!</h5>  
 
@@ -38,12 +46,12 @@ layout: default
 
 <p>MetaWorks has been used as a part of the <a href="https://stream-dna.com/">STREAM</a> and <a href="https://www.canada.ca/en/environment-climate-change/services/biodiversity/ecobiomics.html">EcoBiomics</a> projects to process multi-marker metabarcode datasets from freshwater benthos, water, and soil.</p> 
 
-<h2>Citing Metaworks</h2>
+<h2>How to cite</h2>
 
-<p>If you use this dataflow or any of the provided scripts, please cite the MetaWorks preprint:</p> 
+<p>MetaWorks preprint:</p> 
 
-<p>Porter, T.M., Hajibabaei, M. 2020. METAWORKS: A flexible, scalable bioinformatic pipeline for multi-marker biodiversity assessments. BioRxiv, doi: https://doi.org/10.1101/2020.07.14.202960.</p>
+<p>Porter, T.M., Hajibabaei, M. 2020. <a href="https://doi.org/10.1101/2020.07.14.202960">METAWORKS: A flexible, scalable bioinformatic pipeline for multi-marker biodiversity assessments.</a> BioRxiv, https://doi.org/10.1101/2020.07.14.202960</p>
 
-<p>If you use the pseudogene filtering methods, please cite the pseudogene publication:</p> 
+<p>Filtering putative pseudogenes from metabarcodes:</p> 
 
-<p>Porter, T.M., & Hajibabaei, M. (2021). Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets. BMC Bioinformatics, 22: 256.</p>
+<p>Porter, T.M., & Hajibabaei, M. (2021). <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04180-x">Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets.</a> BMC Bioinformatics, 22: 256.</p>
