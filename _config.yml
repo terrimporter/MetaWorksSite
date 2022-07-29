@@ -23,7 +23,7 @@ license: creativecommons.org/licenses/by/4.0
 # this and add the path to the pages in order as they should show up
 header_pages:
   - quickstart.md
-  - workflows.md
+  - details.md
   - tutorial.md
   - faq.md
 

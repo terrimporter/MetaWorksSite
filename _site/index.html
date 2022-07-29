@@ -32,7 +32,7 @@
       <ul class="navbar-nav me-auto"><li class="nav-item">
             <a class="nav-link" href="/quickstart/">Quickstart</a>
           </li><li class="nav-item">
-            <a class="nav-link" href="/workflows/">Workflows in Detail</a>
+            <a class="nav-link" href="/details/">Pipeline details</a>
           </li><li class="nav-item">
             <a class="nav-link" href="/tutorial/">Tutorial</a>
           </li><li class="nav-item">
@@ -81,10 +81,10 @@
 
 <h5 class="text-info">Generates either exact sequence variants and/or operational taxonomic units</h5>
 
-<p>MetaWorks offers workflows for generating exact sequence variants (ESVs) and/or operational taxonomic units (OTUs) using a 97% identity cutoff using VSEARCH.  Workflows are also available for single-read processing for when the amplicon reads do not overlap.</p>
+<p>MetaWorks offers workflows for generating exact sequence variants (ESVs) and/or operational taxonomic units (OTUs) using a 97% identity cutoff using VSEARCH.  A workflow is also available for single-read processing for when the amplicon reads do not overlap.</p>
 
 <p align="center">
-  <img src="./images/workflows.jpg" width="750" />
+  <img src="./images/workflows_top3.jpg" width="750" />
 </p>
 
 <h5 class="text-info">Supports popular metabarcode markers</h5>
@@ -94,6 +94,91 @@
 <p align="center">
   <img src="./images/workflows_by_markertype.jpg" width="550" />
 </p>
+
+<p>MetaWorks uses a naive Bayesian classifier to make taxonomic assignments with a measure of confidence (Wang et al, 2007).  Built-in markers include the popular prokaryote 16S rRNA gene, fungal ITS, and fungal LSU rRNA markers.  Custom-trained classifiers developed for MetaWorks includes: COI, 18S rRNA, rbcL, and 12S.</p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Marker</th>
+      <th scope="col">Target taxa</th>
+      <th scope="col">Classifier availability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-default">
+      <td>COI</td>
+      <td>Eukaryotes</td>
+      <td><a href="https://github.com/terrimporter/CO1Classifier">https://github.com/terrimporter/CO1Classifier</a></td>
+    </tr>
+	<tr class="table-default">
+      <td>rbcL</td>
+      <td>Diatoms</td>
+      <td><a href="https://github.com/terrimporter/rbcLdiatomClassifier">https://github.com/terrimporter/rbcLdiatomClassifier</a></td>
+    </tr>
+	<tr class="table-default">
+      <td>rbcL</td>
+      <td>Eukaryotes</td>
+      <td><a href="https://github.com/terrimporter/rbcLClassifier">https://github.com/terrimporter/rbcLClassifier</a></td>
+    </tr>
+	<tr class="table-default">
+      <td>12S</td>
+      <td>Fish</td>
+      <td><a href="https://github.com/terrimporter/12SfishClassifier">https://github.com/terrimporter/12SfishClassifier</a></td>
+    </tr>
+	<tr class="table-default">
+      <td>12S</td>
+      <td>Vertebrates</td>
+      <td><a href="https://github.com/terrimporter/12SvertebrateClassifier">https://github.com/terrimporter/12SvertebrateClassifier</a></td>
+    </tr>
+	<tr class="table-default">
+      <td>SSU (18S)</td>
+      <td>Diatoms</td>
+      <td><a href="https://github.com/terrimporter/SSUdiatomClassifier">https://github.com/terrimporter/SSUdiatomClassifier</a></td>
+    </tr>
+	<tr class="table-default">
+      <td>SSU (16S)</td>
+      <td>Vertebrates</td>
+      <td><a href="https://github.com/terrimporter/16SvertebrateClassifier">https://github.com/terrimporter/16SvertebrateClassifier</a></td>
+    </tr>
+	<tr class="table-default">
+      <td>SSU (18S)</td>
+      <td>Eukaryotes</td>
+      <td><a href="https://github.com/terrimporter/18SClassifier">https://github.com/terrimporter/18SClassifier</a></td>
+    </tr>
+	<tr class="table-default">
+      <td>SSU (16S)</td>
+      <td>Prokaryotes</td>
+      <td>Built-in to the RDP classifier</td>
+    </tr>
+	<tr class="table-default">
+      <td>ITS</td>
+      <td>Fungi (Warcup)</td>
+      <td>Built-in to the RDP classifier</td>
+    </tr>
+	<tr class="table-default">
+      <td>ITS</td>
+      <td>Fungi (UNIE 2014)</td>
+      <td>Built-in to the RDP classifier</td>
+    </tr>
+	<tr class="table-default">
+      <td>ITS</td>
+      <td>Fungi (UNIE 2021)</td>
+      <td><a href="https://github.com/terrimporter/UNITE_ITSClassifier">https://github.com/terrimporter/UNITE_ITSClassifier</a></td>
+    </tr>
+	<tr class="table-default">
+      <td>ITS</td>
+      <td>Plants (PLANiTS)</td>
+      <td><a href="https://github.com/terrimporter/PLANiTS_ITSClassifier">https://github.com/terrimporter/PLANiTS_ITSClassifier</a></td>
+    </tr>
+	<tr class="table-default">
+      <td>LSU</td>
+      <td>Fungi</td>
+      <td>Built-in to the RDP classifier</td>
+    </tr>
+
+  </tbody>
+</table>
 
 <h5 class="text-info">Developed to support projects that cut across taxon lines!</h5>
 
