@@ -6,7 +6,7 @@ permalink: /tutorial/
 
 <h1>Tutorial</h1>
 <br>
-We have provided a small set of COI paired-end Illumina MiSeq files for this tutorial.  These sequence files contain reads for several pooled COI amplicons, but here we will focus on the COI-BR5 amplicon (Hajibabaei et al., 2012, Gibson et al., 2014).  Same as the quickstart above, but with additional instructions here if needed.
+We have provided a small set of COI paired-end Illumina MiSeq files for this tutorial. These sequence files contain reads for several pooled COI amplicons, but here we will focus on the COI-BR5 amplicon (Hajibabaei et al., 2012, Gibson et al., 2014). Same as the quickstart above, but with additional instructions here if needed.
 
 <h2>Sections:</h2>
 <h5><a href="#step1">Prepare your environment for the pipeline</a></h5>
@@ -47,14 +47,14 @@ Create then activate the MetaWorks_v1.10.0 environment:
 <pre><code># Move into the MetaWorks folder
 cd MetaWorks1.9.5
 
-# Create the environment from the provided environment.yml file .  Only need to do this step once.
+# Create the environment from the provided environment.yml file . Only need to do this step once.
 conda env create -f environment.yml
 
-# Activate the environment.  Do this everytime before running the pipeline.
+# Activate the environment. Do this everytime before running the pipeline.
 conda activate MetaWorks_v1.10.0
 </code></pre>
 
-To taxonomically assign COI metabarocodes, you will  need to install the RDP-trained COI Classifier from https://github.com/terrimporter/CO1Classifier/releases/tag/v4 . You can do this at the command line using wget.
+To taxonomically assign COI metabarocodes, you will need to install the RDP-trained COI Classifier from <a href="https://github.com/terrimporter/CO1Classifier/releases/tag/v4" target="_blank">https://github.com/terrimporter/CO1Classifier/releases/tag/v4</a>. You can do this at the command line using wget.
 
 <pre><code># download the COIv4 classifier
 wget https://github.com/terrimporter/CO1Classifier/releases/download/v4/CO1v4_trained.tar.gz
@@ -85,7 +85,7 @@ mv ORFfinder ~/bin/.
 
 <a id="step2">**Run MetaWorks using the COI testing data provided.**</a>
 
-The config_testing_COI_data.yaml file has been 'preset' to work with the COI_data files in the testing folder.  You will, however, still need to add the path to the trained COI classifier and save your changes.
+The config_testing_COI_data.yaml file has been 'preset' to work with the COI_data files in the testing folder. You will, however, still need to add the path to the trained COI classifier and save your changes.
 
 <pre><code>RDP:
 # If you are using a custom-trained reference set 
@@ -101,7 +101,7 @@ snakemake --jobs 2 --snakefile snakefile --configfile config_testing_COI_data.ya
 
 <a id="step3">**Analyze the output.**</a>
 
-The final output file is called results.csv .  The results are for the COI-BR5 amplicon.  This can be imported into R for bootstrap support filtering, pivot table creation, normalization, vegan analysis, etc.  There are also a number of other output files in the stats directory showing the total number of reads processed at each step as well as the sequence lengths.  Log files are also available for the dereplication, denoising, and chimera removal steps.
+The final output file is called results.csv . The results are for the COI-BR5 amplicon. This can be imported into R for bootstrap support filtering, pivot table creation, normalization, vegan analysis, etc. There are also a number of other output files in the stats directory showing the total number of reads processed at each step as well as the sequence lengths. Log files are also available for the dereplication, denoising, and chimera removal steps.
 
 If you are done with MetaWorks, deactivate the conda environment:
 

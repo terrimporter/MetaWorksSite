@@ -65,23 +65,23 @@
 <h2> Why MetaWorks? </h2>
 
 <h5 class="text-info">Free and open-source software</h5>
-<p>MetaWorks runs at the command-line on linux-64.  The pipeline strings together popular open-source free software tools to process demultiplexed Illumina paired-end reads such as SeqPrep (St. John, 2016), CutAdapt (Martin, 2011), VSEARCH (Rognes, Flouri, Nichols, Quince, &amp; Mahé, 2016), and the RDP Classifier (Wang, Garrity, Tiedje, &amp; Cole, 2007).</p>
+<p>MetaWorks runs at the command-line on linux-64. The pipeline strings together popular open-source free software tools to process demultiplexed Illumina paired-end reads such as SeqPrep (St. John, 2016), CutAdapt (Martin, 2011), VSEARCH (Rognes, Flouri, Nichols, Quince, &amp; Mahé, 2016), and the RDP Classifier (Wang, Garrity, Tiedje, &amp; Cole, 2007).</p>
 
 <h5 class="text-info">Versioned workflows to improve reproducibility</h5>
 
-<p>MetaWorks is versioned and available from <a href="https://github.com/terrimporter/MetaWorks">GitHub.</a></p>
+<p>MetaWorks is versioned and available from <a href="https://github.com/terrimporter/MetaWorks" target="_blank">GitHub.</a></p>
 
 <h5 class="text-info">Harmonized Conda processing environment</h5>
 
-<p>MetaWorks comes with a conda environment file that should be activated before running the pipeline. Conda is an open-source environment and package manager (Anaconda, 2016). The environment file contains most of the programs and dependencies needed to run MetaWorks. If pseudogene filtering will be used, then the NCBI ORFfinder program will also need to be installed.  Additional RDP-trained reference sets may need to be downloaded if the reference set needed is not already built in to the RDP classifier.</p>
+<p>MetaWorks comes with a conda environment file that should be activated before running the pipeline. Conda is an open-source environment and package manager (Anaconda, 2016). The environment file contains most of the programs and dependencies needed to run MetaWorks. If pseudogene filtering will be used, then the NCBI ORFfinder program will also need to be installed. Additional RDP-trained reference sets may need to be downloaded if the reference set needed is not already built in to the RDP classifier.</p>
 
 <h5 class="text-info">Uses Snakemake for scalable processing</h5>
 
-<p>Snakemake is a Python-based workflow manager (Koster and Rahmann, 2012) that strings together workflow-steps and distributes these jobs across a high performance computing platform to efficiently manage computational resources.  Interrupted jobs can be re-started following the last successful step.</p>
+<p>Snakemake is a Python-based workflow manager (Koster and Rahmann, 2012) that strings together workflow-steps and distributes these jobs across a high performance computing platform to efficiently manage computational resources. Interrupted jobs can be re-started following the last successful step.</p>
 
 <h5 class="text-info">Generates either exact sequence variants and/or operational taxonomic units</h5>
 
-<p>MetaWorks offers workflows for generating exact sequence variants (ESVs) and/or operational taxonomic units (OTUs) using a 97% identity cutoff using VSEARCH.  A workflow is also available for single-read processing for when the amplicon reads do not overlap.</p>
+<p>MetaWorks offers workflows for generating exact sequence variants (ESVs) and/or operational taxonomic units (OTUs) using a 97% identity cutoff using VSEARCH. A workflow is also available for single-read processing for when the amplicon reads do not overlap.</p>
 
 <p align="center">
   <img src="./images/workflows_top3.jpg" width="750" />
@@ -89,15 +89,15 @@
 
 <h5 class="text-info">Supports popular metabarcode markers</h5>
 
-<p>MetaWorks was specifically developed to handle different types of metabarcodes from ribosomal RNA genes + spacers to protein coding genes.  Unique marker considerations, such as the removal of conserved rRNA genes from ITS sequences and putative pseudogenes from COI is supported.  A detailed description of our pseudogene-filtering approaches for protein-coding metabarcode markers has been <a href="https://link.springer.com/article/10.1186/s12859-021-04180-x">published</a>.</p>
+<p>MetaWorks was specifically developed to handle different types of metabarcodes from ribosomal RNA genes + spacers to protein coding genes. Unique marker considerations, such as the removal of conserved rRNA genes from ITS sequences and putative pseudogenes from COI is supported. A detailed description of our pseudogene-filtering approaches for protein-coding metabarcode markers has been <a href="https://link.springer.com/article/10.1186/s12859-021-04180-x" target="_blank">published</a>.</p>
 
 <p align="center">
   <img src="./images/workflows_by_markertype.jpg" width="550" />
 </p>
 
-<p>MetaWorks uses a naive Bayesian classifier to make taxonomic assignments with a measure of confidence (Wang et al, 2007).  Built-in markers include the popular prokaryote 16S rRNA gene, fungal ITS, and fungal LSU rRNA markers.  Custom-trained classifiers developed for MetaWorks includes: COI, 18S rRNA, rbcL, and 12S.</p>
+<p>MetaWorks uses a naive Bayesian classifier to make taxonomic assignments with a measure of confidence (Wang et al, 2007). Built-in markers include the popular prokaryote 16S rRNA gene, fungal ITS, and fungal LSU rRNA markers. Custom-trained classifiers developed for MetaWorks includes: COI, 18S rRNA, rbcL, and 12S.</p>
 
-<p><a id="classifier_table"><strong>Table 1.  Where to download trained RDP classifiers for a variety of popular marker gene/metabarcoding targets.</strong></a></p>
+<p><a id="classifier_table"><strong>Table 1. Where to download trained RDP classifiers for a variety of popular marker gene/metabarcoding targets.</strong></a></p>
 
 <table class="table table-hover">
   <thead>
@@ -111,42 +111,42 @@
     <tr class="table-default">
       <td>COI</td>
       <td>Eukaryotes</td>
-      <td><a href="https://github.com/terrimporter/CO1Classifier">https://github.com/terrimporter/CO1Classifier</a></td>
+      <td><a href="https://github.com/terrimporter/CO1Classifier" target="_blank">https://github.com/terrimporter/CO1Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>rbcL</td>
       <td>Diatoms</td>
-      <td><a href="https://github.com/terrimporter/rbcLdiatomClassifier">https://github.com/terrimporter/rbcLdiatomClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/rbcLdiatomClassifier" target="_blank">https://github.com/terrimporter/rbcLdiatomClassifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>rbcL</td>
       <td>Eukaryotes</td>
-      <td><a href="https://github.com/terrimporter/rbcLClassifier">https://github.com/terrimporter/rbcLClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/rbcLClassifier" target="_blank">https://github.com/terrimporter/rbcLClassifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>12S</td>
       <td>Fish</td>
-      <td><a href="https://github.com/terrimporter/12SfishClassifier">https://github.com/terrimporter/12SfishClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/12SfishClassifier" target="_blank">https://github.com/terrimporter/12SfishClassifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>12S</td>
       <td>Vertebrates</td>
-      <td><a href="https://github.com/terrimporter/12SvertebrateClassifier">https://github.com/terrimporter/12SvertebrateClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/12SvertebrateClassifier" target="_blank">https://github.com/terrimporter/12SvertebrateClassifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>SSU (18S)</td>
       <td>Diatoms</td>
-      <td><a href="https://github.com/terrimporter/SSUdiatomClassifier">https://github.com/terrimporter/SSUdiatomClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/SSUdiatomClassifier" target="_blank">https://github.com/terrimporter/SSUdiatomClassifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>SSU (16S)</td>
       <td>Vertebrates</td>
-      <td><a href="https://github.com/terrimporter/16SvertebrateClassifier">https://github.com/terrimporter/16SvertebrateClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/16SvertebrateClassifier" target="_blank">https://github.com/terrimporter/16SvertebrateClassifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>SSU (18S)</td>
       <td>Eukaryotes</td>
-      <td><a href="https://github.com/terrimporter/18SClassifier">https://github.com/terrimporter/18SClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/18SClassifier" target="_blank">https://github.com/terrimporter/18SClassifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>SSU (16S)</td>
@@ -166,12 +166,12 @@
 	<tr class="table-default">
       <td>ITS</td>
       <td>Fungi (UNIE 2021)</td>
-      <td><a href="https://github.com/terrimporter/UNITE_ITSClassifier">https://github.com/terrimporter/UNITE_ITSClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/UNITE_ITSClassifier" target="_blank">https://github.com/terrimporter/UNITE_ITSClassifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>ITS</td>
       <td>Plants (PLANiTS)</td>
-      <td><a href="https://github.com/terrimporter/PLANiTS_ITSClassifier">https://github.com/terrimporter/PLANiTS_ITSClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/PLANiTS_ITSClassifier" target="_blank">https://github.com/terrimporter/PLANiTS_ITSClassifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>LSU</td>
@@ -184,19 +184,19 @@
 
 <h5 class="text-info">Developed to support projects that cut across taxon lines!</h5>
 
-<p>Our pipelines have been around, in one form or another, since before the terms metabarcoding and eDNA were coined.  As we know, ‘best practice’ is a moving target in this field.  MetaWorks is based on ‘best practices’ from the fields of microbial and fungal molecular ecology and strives to accommodate the needs of the animal metabarcode community.  We are driven by the need to make metabarcode bioinformatic processing both scalable and tractable within reasonable timeframes.  This pipeline is in active development to keep up with improvements in the underlying programs and reference sequence databases.</p>
+<p>Our pipelines have been around, in one form or another, since before the terms metabarcoding and eDNA were coined. As we know, ‘best practice’ is a moving target in this field. MetaWorks is based on ‘best practices’ from the fields of microbial and fungal molecular ecology and strives to accommodate the needs of the animal metabarcode community. We are driven by the need to make metabarcode bioinformatic processing both scalable and tractable within reasonable timeframes. This pipeline is in active development to keep up with improvements in the underlying programs and reference sequence databases.</p>
 
-<p>MetaWorks has been used as a part of the <a href="https://stream-dna.com/">STREAM</a> and <a href="https://www.canada.ca/en/environment-climate-change/services/biodiversity/ecobiomics.html">EcoBiomics</a> projects to process multi-marker metabarcode datasets from freshwater benthos, water, and soil.</p>
+<p>MetaWorks has been used as a part of the <a href="https://stream-dna.com/" target="_blank">STREAM</a> and <a href="https://www.canada.ca/en/environment-climate-change/services/biodiversity/ecobiomics.html" target="_blank">EcoBiomics</a> projects to process multi-marker metabarcode datasets from freshwater benthos, water, and soil.</p>
 
 <h2>How to cite</h2>
 
 <p>MetaWorks preprint:</p>
 
-<p>Porter, T.M., Hajibabaei, M. 2020. <a href="https://doi.org/10.1101/2020.07.14.202960">METAWORKS: A flexible, scalable bioinformatic pipeline for multi-marker biodiversity assessments.</a> BioRxiv, https://doi.org/10.1101/2020.07.14.202960</p>
+<p>Porter, T.M., Hajibabaei, M. 2020. <a href="https://doi.org/10.1101/2020.07.14.202960" target="_blank">METAWORKS: A flexible, scalable bioinformatic pipeline for multi-marker biodiversity assessments.</a> BioRxiv, https://doi.org/10.1101/2020.07.14.202960</p>
 
 <p>Filtering putative pseudogenes from metabarcodes:</p>
 
-<p>Porter, T.M., &amp; Hajibabaei, M. (2021). <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04180-x">Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets.</a> BMC Bioinformatics, 22: 256.</p>
+<p>Porter, T.M., &amp; Hajibabaei, M. (2021). <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04180-x" target="_blank">Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets.</a> BMC Bioinformatics, 22: 256.</p>
 
       </div>
     </main>
