@@ -244,7 +244,7 @@ ESVtable <- reshape2::dcast(df, SampleName ~ GlobalESV, value.var = "ESVsize", f
     </h2>
     <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-parent="#accordionFAQ">
       <div class="accordion-body">
-<p>If you are targeting a broad group, such as Metazoa using COI primers, you can still filter out pseudogenes using removal method 1 that uses ORFfinder.  This can be done in two steps, for example by first processing invertebrate phyla, then processing phylum chordata that includes the vertebrata clade (see NCBI taxonomy).  Note that pseudogene removal method 2 that uses HMMer is currently only available for COI arthropoda at this time.<p>
+<p>If you are targeting a broad group, such as Metazoa using COI primers, you can still filter out pseudogenes using removal method 1 that uses ORFfinder.  This can be done in two steps, for example by first processing invertebrate phyla, then processing phylum chordata that includes the vertebrata clade (see NCBI taxonomy).  Note that pseudogene removal method 2 that uses HMMer is currently only available for COI arthropoda at this time.</p>
 
 <p>1. Edit the config_ESV.yaml file as follows:  
 
@@ -278,3 +278,4 @@ Run snakemake.  Move chordata outfiles into their own directory so they do not g
       </div>
     </div>
   </div>
+</div>
