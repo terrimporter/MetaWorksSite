@@ -5,7 +5,7 @@ permalink: /tutorial/
 ---
 
 <h1>Tutorial</h1>
-<br>
+
 We have provided a small set of COI paired-end Illumina MiSeq files for this tutorial. These sequence files contain reads for several pooled COI amplicons, but here we will focus on the COI-BR5 amplicon (Hajibabaei et al., 2012, Gibson et al., 2014). Same as the quickstart above, but with additional instructions here if needed.
 
 <h2>Sections:</h2>
