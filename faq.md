@@ -4,9 +4,9 @@ title: FAQ
 permalink: /faq/
 ---
 
-<h2>Frequently Asked Questions</h2>
+<h1>Frequently Asked Questions</h1>
 <br>
-<h3>Metaworks FAQs</h3>
+<h2>Metaworks FAQs</h2>
 <div class="accordion" id="metaworksFAQ">
   <div class="accordion-item">
     <h2 class="accordion-header" id="metaHeadingOne">
@@ -265,7 +265,7 @@ Run snakemake. Move chordata outfiles into their own directory so they do not ge
   </div>
 </div>
 <br>
-<h3>Data Analysis FAQs</h3>
+<h2>Data Analysis FAQs</h2>
 <div class="accordion" id="dataAnalysisFAQ">
   <div class="accordion-item">
     <h2 class="accordion-header" id="dataHeadingOne">

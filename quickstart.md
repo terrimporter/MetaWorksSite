@@ -4,7 +4,7 @@ title: Quickstart
 permalink: /quickstart/
 ---
 
-<h2>Workflow quickstart</h2>
+<h1>Workflow Quickstart</h1>
 <br>
 <p>Prior to following these quickstart instructions:<br>
 1. Ensure conda is installed and the MetaWorks environment is activated.<br> 
@@ -12,7 +12,7 @@ permalink: /quickstart/
 3. If you are using a custom RDP classifier, that it is installed.<br>
 If you are unsure of how to do any of this, please refer to the <a href="../tutorial/">Tutorial</a> for step-by-step instructions.</p>
 
-<h5 class="text-info">Default ESV workflow quickstart</h5>
+<h5 class="text-info">Default ESV Workflow Quickstart</h5>
 
 <p align="center">
   <img src="../images/workflows_ESV.jpg" width="750"/>
@@ -23,7 +23,7 @@ If you are unsure of how to do any of this, please refer to the <a href="../tuto
 snakemake --jobs 24 --snakefile snakefile_ESV --configfile config_ESV.yaml
 </code></pre>
 
-<h5 class="text-info">OTU workflow quickstart</h5>
+<h5 class="text-info">OTU Workflow Quickstart</h5>
 
 <p align="center">
   <img src="../images/workflows_OTU.jpg" width="750"/>
@@ -34,7 +34,7 @@ snakemake --jobs 24 --snakefile snakefile_ESV --configfile config_ESV.yaml
 snakemake --jobs 24 --snakefile snakefile_OTU --configfile config_OTU.yaml
 </code></pre>
 
-<h5 class="text-info">Single read workflow quickstart</h5>
+<h5 class="text-info">Single Read Workflow Quickstart</h5>
 
 <p align="center">
   <img src="../images/workflows_singleRead.jpg" width="750"/>
@@ -45,7 +45,7 @@ snakemake --jobs 24 --snakefile snakefile_OTU --configfile config_OTU.yaml
 snakemake --jobs 24 --snakefile snakefile_ESV_singleRead --configfile config_ESV_singleRead.yaml
 </code></pre>
 
-<h5 class="text-info">Global ESV workflow quickstart</h5>
+<h5 class="text-info">Global ESV Workflow Quickstart</h5>
 
 <p align="center">
   <img src="../images/workflows_ESV_global.jpg" width="750"/>
@@ -56,7 +56,7 @@ snakemake --jobs 24 --snakefile snakefile_ESV_singleRead --configfile config_ESV
 snakemake --jobs 24 --snakefile snakefile_ESV_global --configfile config_ESV_global.yaml
 </code></pre>
 
-<h5 class="text-info">Global OTU workflow quickstart</h5>
+<h5 class="text-info">Global OTU Workflow Quickstart</h5>
 
 <p align="center">
   <img src="../images/workflows_OTU_global.jpg" width="750"/>
@@ -67,7 +67,7 @@ snakemake --jobs 24 --snakefile snakefile_ESV_global --configfile config_ESV_glo
 snakemake --jbos 24 --snakefile snakefile_OTU_global --configfile config_OTU_global.yaml
 </code></pre>
 
-<h5 class="text-info">Barcoding workflow quickstart</h5>
+<h5 class="text-info">Barcoding Workflow Quickstart</h5>
 
 <p align="center">
   <img src="../images/workflows_barcoding.jpg" width="750"/>
