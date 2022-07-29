@@ -123,7 +123,6 @@ layout: default
       <td>Fungi</td>
       <td>Built-in to the RDP classifier</td>
     </tr>
-
   </tbody>
 </table>
 
@@ -133,12 +132,42 @@ layout: default
 
 <p>MetaWorks has been used as a part of the <a href="https://stream-dna.com/" target="_blank">STREAM</a> and <a href="https://www.canada.ca/en/environment-climate-change/services/biodiversity/ecobiomics.html" target="_blank">EcoBiomics</a> projects to process multi-marker metabarcode datasets from freshwater benthos, water, and soil.</p> 
 
+<h2>Papers and Projects That Use MetaWorks:</h2>
+
+<p>Edge TA, Baird DJ, Bilodeau G, Gagné N, Greer C, Konkin D, et al. 2020.  <a href="https://doi.org/10.1016/j.scitotenv.2019.135906" target="_blank">The Ecobiomics project: Advancing metagenomics assessment of soil health and freshwater quality in Canada</a>. Science of The Total Environment, 710: 135906. doi:10.1016/j.scitotenv.2019.135906</p>
+
+<p>Moir, C. 2021. <a href="https://hdl.handle.net/10214/25791" target="_blank">No Stomach, No Problem: an Integrated Morpho-Molecular Approach to Assessing the Diets of the Cunner Wrasse, Tautogolabrus adspersus, among Coastal, Nearshore Regions of Atlantic Canada</a> (Doctoral dissertation, University of Guelph).</p>
+
+<p>Porter, TM & Hajibabaei, M, 2020. <a href="https://doi.org/10.1101/2020.07.14.202960" target="_blank">METAWORKS: A flexible, scalable bioinformatic pipeline for multi-marker biodiversity assessments</a>. bioRxiv, doi:10.1101/2020.07.14.202960</p>
+
+<p>Porter, TM, & Hajibabaei, M. (2021). <a href="https://doi.org/10.1186/s12859-021-04180-x" target="_blank">Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets</a>. BMC Bioinformatics, 22(1): 256. doi:10.1186/s12859-021-04180-x</p>
+
+<p>Robinson, CV, Baird, DJ, Wright, MTG, Porter, TM, Hartwig, K, Hendriks, E, Maclean, L, Mallinson, R, Monk, WA, Paquette, C and Hajibabaei, M. 2021. <a href="https://doi.org/10.1016/j.pecon.2021.03.001" target="blank">Combining DNA and people power for healthy rivers: Implementing the STREAM community-based approach for global freshwater monitoring. Perspectives in Ecology and Conservation</a>, 19(3): 279-285. doi:10.1016/j.pecon.2021.03.001</p>
+
+<p>Robinson, CV, Porter, TM, Maitland, VC, Wright, MT and Hajibabaei, M. 2021. <a href="https://doi.org/10.1101/2021.11.14.468533" target="blank">Multi-marker metabarcoding resolves subtle variations in freshwater condition: Bioindicators, ecological traits, and trophic interactions</a>. bioRxiv, doi:10.1101/2021.11.14.468533</p>
+
+<p>Rudar, J, Golding, GB, Kremer, SC and Hajibabaei, M. 2022. <a href="https://doi.org/10.1101/2022.03.31.486647" target="blank">Decision Tree Ensembles Utilizing Multivariate Splits Are Effective at Investigating Beta-Diversity in Medically Relevant 16S Amplicon Sequencing Data.</a> bioRxiv, doi:10.1101/2022.03.31.486647</p>
+
+<p>Smenderovac E, Emilson C, Porter T, Morris D, Hazlett P, Diochon A, et al. 2022.  <a href="https://doi.org/10.1038/s41598-022-07670-x" target="_blank">Forest soil biotic communities show few responses to wood ash applications at multiple sites across Canada.</a> Sci Rep., 12: 4171. doi:10.1038/s41598-022-07670-x</p>
+
 <h2>How to cite</h2>
 
-<p>MetaWorks preprint:</p> 
+<p>If you use this dataflow or any of the provided scripts, please cite the MetaWorks preprint:</p> 
 
-<p>Porter, T.M., Hajibabaei, M. 2020. <a href="https://doi.org/10.1101/2020.07.14.202960" target="_blank">METAWORKS: A flexible, scalable bioinformatic pipeline for multi-marker biodiversity assessments.</a> BioRxiv, https://doi.org/10.1101/2020.07.14.202960</p>
+<p>Porter, T.M., Hajibabaei, M. 2020. <a href="https://doi.org/10.1101/2020.07.14.202960" target="_blank">METAWORKS: A flexible, scalable bioinformatic pipeline for multi-marker biodiversity assessments</a>. bioRxiv, doi:10.1101/2020.07.14.202960</p>
 
-<p>Filtering putative pseudogenes from metabarcodes:</p> 
+<p>You can also cite the MetaWorks repository:</p>
 
-<p>Porter, T.M., & Hajibabaei, M. (2021). <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04180-x" target="_blank">Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets.</a> BMC Bioinformatics, 22: 256.</p>
+<p>Teresita M. Porter. (2020, June 25). <a href="http://doi.org/10.5281/zenodo.4741407" target="_blank">MetaWorks: A Multi-Marker Metabarcode Pipeline (Version v1.10.0)</a>. Zenodo, doi:10.5281/zenodo.4741407</p>
+
+<p>If you use this dataflow for making COI taxonomic assignments, please cite the COI classifier publication:</p>
+
+<p>Porter, T. M., & Hajibabaei, M. (2018). <a href="https://doi.org/10.1038/s41598-018-22505-4" target="_blank">Automated high throughput animal CO1 metabarcode classification</a>. Scientific Reports, 8, 4226. doi:10.1038/s41598-018-22505-4</p>
+
+<p>If you use the pseudogene filtering methods, please cite this publication::</p> 
+
+<p>Porter, T.M., & Hajibabaei, M. (2021). <a href="https://doi.org/10.1186/s12859-021-04180-x" target="_blank">Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets</a>. BMC Bioinformatics, 22: 256. doi:10.1186/s12859-021-04180-x</p>
+
+<p>If you use the RDP classifier, please cite the publication:</p>
+
+<p>Wang, Q., Garrity, G. M., Tiedje, J. M., & Cole, J. R. (2007). <a href="https://doi.org/10.1128/AEM.00062-07" target="_blank">Naive Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Applied and Environmental Microbiology</a>. 73(16), 5261–5267. doi:10.1128/AEM.00062-07</p>
