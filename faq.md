@@ -106,19 +106,18 @@ export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
 
 <p>Test ORFfinder:</p>
 
-<pre><code>ORFfinder
-</code></pre>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        <h5 class="text-info">How do I fix a libnghttp2 error when trying to run ORFfinder?</h5>
-      </button>
-    </h2>
-    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-parent="#accordionFAQ">
-      <div class="accordion-body">
+<pre><code>ORFfinder</code></pre>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <h5 class="text-info">How do I fix a libnghttp2 error when trying to run ORFfinder?</h5>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-parent="#accordionFAQ">
+              <div class="accordion-body">
 <p>The missing library (on Centos7), is already available, only the LD_LIBRARY_PATH needs to be updated as follows:</p>
 
 <p>Create the shell script file LD_PATH.sh in the following location to set the environment variable: ~/miniconda3/envs/MetaWorks_v1.10.0/etc/conda/activate.d/LD_PATH.sh</p>
@@ -141,8 +140,7 @@ export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
 
 <p>Test ORFfinder:</p>
 
-<pre><code>ORFfinder
-</code></pre>
+<pre><code>ORFfinder</code></pre>
       </div>
     </div>
   </div>
@@ -249,6 +247,7 @@ ESVtable <- reshape2::dcast(df, SampleName ~ GlobalESV, value.var = "ESVsize", f
 <p>If you are targeting a broad group, such as Metazoa using COI primers, you can still filter out pseudogenes using removal method 1 that uses ORFfinder.  This can be done in two steps, for example by first processing invertebrate phyla, then processing phylum chordata that includes the vertebrata clade (see NCBI taxonomy).  Note that pseudogene removal method 2 that uses HMMer is currently only available for COI arthropoda at this time.<p>
 
 <p>1. Edit the config_ESV.yaml file as follows:  
+
 Set the taxonomy filter to '-e Annelida -e Arthropoda -e Bryozoa -e Cnidaria -e Echinodermata -e Mollusca -e Nematoda -e Nematomorpha -e Nemertea -e Platyhelminthes -e Porifera' to target invertebrate animal phyla  
 Set pseudogene removal method 1 (only uses ORFfinder)  
 Set genetic code to '5' to use the invertebrate mitochondrial genetic code for translation  
@@ -258,19 +257,19 @@ Run snakemake.  Move invertebrate outfiles into their own directory so they do n
 Set the taxonomy filter to '-e Chordata' to target animals with a notochord (includes the Vertebrata clade) (see NCBI taxonomy)  
 Keep pseudogene removal method 1  
 Set genetic code to '2' to use the vertebrate mitochondrial genetic code for translation  
-Run snakemake.  Move chordata outfiles into their own directory so they do not get over-written: taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta*, rdp.csv.tmp, results.csv .</p> 
+Run snakemake.  Move chordata outfiles into their own directory so they do not get over-written: taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta*, rdp.csv.tmp, results.csv .</p>
 
 <p>The invertebrate and chordata results.csv files can then be combined prior to downstream processing.</p>
       </div>
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingLast">
-      <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseLast" aria-expanded="false" aria-controls="collapseLast">
+    <h2 class="accordion-header" id="headingEleven">
+      <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
         <h5 class="text-info">The final output file wasn't created, what happened?</h5>
       </button>
     </h2>
-    <div id="collapseLast" class="accordion-collapse collapse" aria-labelledby="headingLast" data-parent="#accordionFAQ">
+    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-parent="#accordionFAQ">
       <div class="accordion-body">
 <p>If you get a warning and see that the last file created was rdp.csv.tmp but not the expected results.csv then you probably are probably trying to process a very large number of sequence files (thousands) and the job ran into memory problems preventing the creation of the final results.csv file.  You have a few options here:</p>
 <p>a) Re-run the pipeline where there is more memory available so that the final outfile can be created.  On the GPSC, you will need to create an interactive container, activate the conda environbment, then unlock the snakemake directory first before submitting another job with more memory on a large compute node.</p>
@@ -279,4 +278,3 @@ Run snakemake.  Move chordata outfiles into their own directory so they do not g
       </div>
     </div>
   </div>
-</div>
