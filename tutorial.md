@@ -66,7 +66,7 @@ tar -xvzf CO1v4_trained.tar.gz
 # Note the full path to the rRNAClassifier.properties file, ex. mydata_trained/rRNAClassifier.properties
 </code></pre>
 
-You can find the full list of custom-trained classifiers that work with MetaWorks in <a href="#classifier_table">Table 1</a>.
+You can find the full list of custom-trained classifiers that work with MetaWorks <a href="../#classifier_table">here</a>.
 
 <h5><a id="InstallORFfinder">Install ORFfinder</a></h5>
 
