@@ -152,22 +152,22 @@ layout: default
 
 <h2>How to Cite</h2>
 
-<p>If you use this dataflow or any of the provided scripts, please cite the MetaWorks preprint:</p> 
+<p>The MetaWorks pipeline and approach:</p> 
 
 <p>Porter, T.M., Hajibabaei, M. 2020. <a href="https://doi.org/10.1101/2020.07.14.202960" target="_blank">METAWORKS: A flexible, scalable bioinformatic pipeline for multi-marker biodiversity assessments</a>. bioRxiv, doi:10.1101/2020.07.14.202960</p>
 
-<p>You can also cite the MetaWorks repository:</p>
+<p>The MetaWorks code:</p>
 
 <p>Teresita M. Porter. (2020, June 25). <a href="http://doi.org/10.5281/zenodo.4741407" target="_blank">MetaWorks: A Multi-Marker Metabarcode Pipeline (Version v1.10.0)</a>. Zenodo, doi:10.5281/zenodo.4741407</p>
 
-<p>If you use this dataflow for making COI taxonomic assignments, please cite the COI classifier publication:</p>
+<p>The COI classifier:</p>
 
 <p>Porter, T. M., & Hajibabaei, M. (2018). <a href="https://doi.org/10.1038/s41598-018-22505-4" target="_blank">Automated high throughput animal CO1 metabarcode classification</a>. Scientific Reports, 8, 4226. doi:10.1038/s41598-018-22505-4</p>
 
-<p>If you use the pseudogene filtering methods, please cite this publication::</p> 
+<p>MetaWorks pseudogene filtering:</p> 
 
 <p>Porter, T.M., & Hajibabaei, M. (2021). <a href="https://doi.org/10.1186/s12859-021-04180-x" target="_blank">Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets</a>. BMC Bioinformatics, 22: 256. doi:10.1186/s12859-021-04180-x</p>
 
-<p>If you use the RDP classifier, please cite the publication:</p>
+<p>The RDP classifier:</p>
 
 <p>Wang, Q., Garrity, G. M., Tiedje, J. M., & Cole, J. R. (2007). <a href="https://doi.org/10.1128/AEM.00062-07" target="_blank">Naive Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Applied and Environmental Microbiology</a>. 73(16), 5261–5267. doi:10.1128/AEM.00062-07</p>
