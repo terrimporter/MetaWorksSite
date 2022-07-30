@@ -61,7 +61,7 @@ layout: default
 	<tr class="table-default">
       <td>rbcL</td>
       <td>Diatoms</td>
-      <td><a href="https://github.com/terrimporter/rbcLdiatomClassifier" target="_blank">Diatom rbcL Classifier</a></td>
+      <td><a href="https://github.com/terrimporter/rbcLdiatomClassifier" target="_blank">Diat.barcode rbcL Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>rbcL</td>
@@ -71,7 +71,7 @@ layout: default
 	<tr class="table-default">
       <td>12S</td>
       <td>Fish</td>
-      <td><a href="https://github.com/terrimporter/12SfishClassifier" target="_blank">Fish 12S Classifier</a></td>
+      <td><a href="https://github.com/terrimporter/12SfishClassifier" target="_blank">MitoFish 12S Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>12S</td>
