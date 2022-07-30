@@ -110,4 +110,4 @@ If you are done with MetaWorks, deactivate the conda environment:
 
 <pre><code>conda deactivate</code></pre>
 
-<a href="#top">Return to the top.</a>
+<a href="#top">Return to top</a>
