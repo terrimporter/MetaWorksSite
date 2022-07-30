@@ -10,7 +10,7 @@ permalink: /quickstart/
 1. Ensure conda is installed and the MetaWorks environment is activated.<br> 
 2. If you will be doing pseudogene-filtering, then ORFfinder is installed.<br>
 3. If you are using a custom RDP classifier, that it is installed.<br>
-If you are unsure of how to do any of this, please refer to the <a href="../tutorial/">Tutorial</a> for step-by-step instructions.</p>
+If you are unsure of how to do any of this, please refer to the <a href="../tutorial/">tutorial</a> for step-by-step instructions.</p>
 
 <h5 class="text-info">Default ESV Workflow Quickstart</h5>
 
