@@ -105,12 +105,12 @@ layout: default
     </tr>
 	<tr class="table-default">
       <td>ITS</td>
-      <td>Fungi (UNIE 2014)</td>
+      <td>Fungi (UNITE 2014)</td>
       <td>Built-in to the RDP classifier</td>
     </tr>
 	<tr class="table-default">
       <td>ITS</td>
-      <td>Fungi (UNIE 2021)</td>
+      <td>Fungi (UNITE 2021)</td>
       <td><a href="https://github.com/terrimporter/UNITE_ITSClassifier" target="_blank">Fungal UNITE ITS Classifier</a></td>
     </tr>
 	<tr class="table-default">
