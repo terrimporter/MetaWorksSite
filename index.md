@@ -42,7 +42,7 @@ layout: default
 
 <p>MetaWorks uses a naive Bayesian classifier to make taxonomic assignments with a measure of confidence (Wang et al, 2007). Built-in markers include the popular prokaryote 16S rRNA gene, fungal ITS, and fungal LSU rRNA markers. Custom-trained classifiers developed for MetaWorks includes: COI, 18S rRNA, rbcL, and 12S.</p>
 
-<a id="classifier_table">**Table 1. Where to download trained RDP classifiers for a variety of popular marker gene/metabarcoding targets.**</a>
+<h5><a id="classifier_table"><strong>Trained classifiers are available for a variety of popular metabarcoding targets</strong></a></h5>
 
 <table class="table table-hover">
   <thead>
