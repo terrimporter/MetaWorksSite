@@ -42,7 +42,7 @@ layout: default
 
 <p>MetaWorks uses a naive Bayesian classifier to make taxonomic assignments with a measure of confidence (Wang et al, 2007). Built-in markers include the popular prokaryote 16S rRNA gene, fungal ITS, and fungal LSU rRNA markers. Custom-trained classifiers developed for MetaWorks includes: COI, 18S rRNA, rbcL, and 12S.</p>
 
-<h5><a id="classifier_table"><strong>Trained classifiers are available for a variety of popular metabarcoding targets</strong></a></h5>
+<h5><a id="classifier_table"><strong>Trained classifiers that work with MetaWorks and the RDP Classifier</strong></a></h5>
 
 <table class="table table-hover">
   <thead>
@@ -56,42 +56,42 @@ layout: default
     <tr class="table-default">
       <td>COI</td>
       <td>Eukaryotes</td>
-      <td><a href="https://github.com/terrimporter/CO1Classifier" target="_blank">https://github.com/terrimporter/CO1Classifier</a></td>
+      <td><a href="https://github.com/terrimporter/CO1Classifier" target="_blank">Eukaryote COI Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>rbcL</td>
       <td>Diatoms</td>
-      <td><a href="https://github.com/terrimporter/rbcLdiatomClassifier" target="_blank">https://github.com/terrimporter/rbcLdiatomClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/rbcLdiatomClassifier" target="_blank">Diatom rbcL Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>rbcL</td>
       <td>Eukaryotes</td>
-      <td><a href="https://github.com/terrimporter/rbcLClassifier" target="_blank">https://github.com/terrimporter/rbcLClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/rbcLClassifier" target="_blank">Eukaryote rbcL Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>12S</td>
       <td>Fish</td>
-      <td><a href="https://github.com/terrimporter/12SfishClassifier" target="_blank">https://github.com/terrimporter/12SfishClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/12SfishClassifier" target="_blank">Fish 12S Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>12S</td>
       <td>Vertebrates</td>
-      <td><a href="https://github.com/terrimporter/12SvertebrateClassifier" target="_blank">https://github.com/terrimporter/12SvertebrateClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/12SvertebrateClassifier" target="_blank">Vertebrate 12S Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>SSU (18S)</td>
       <td>Diatoms</td>
-      <td><a href="https://github.com/terrimporter/SSUdiatomClassifier" target="_blank">https://github.com/terrimporter/SSUdiatomClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/SSUdiatomClassifier" target="_blank">Diatom SSU Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>SSU (16S)</td>
       <td>Vertebrates</td>
-      <td><a href="https://github.com/terrimporter/16SvertebrateClassifier" target="_blank">https://github.com/terrimporter/16SvertebrateClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/16SvertebrateClassifier" target="_blank">Vertebrate mitochondrial 16S Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>SSU (18S)</td>
       <td>Eukaryotes</td>
-      <td><a href="https://github.com/terrimporter/18SClassifier" target="_blank">https://github.com/terrimporter/18SClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/18SClassifier" target="_blank">Eukaryote 18S Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>SSU (16S)</td>
@@ -111,12 +111,12 @@ layout: default
 	<tr class="table-default">
       <td>ITS</td>
       <td>Fungi (UNIE 2021)</td>
-      <td><a href="https://github.com/terrimporter/UNITE_ITSClassifier" target="_blank">https://github.com/terrimporter/UNITE_ITSClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/UNITE_ITSClassifier" target="_blank">Fungal UNITE ITS Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>ITS</td>
       <td>Plants (PLANiTS)</td>
-      <td><a href="https://github.com/terrimporter/PLANiTS_ITSClassifier" target="_blank">https://github.com/terrimporter/PLANiTS_ITSClassifier</a></td>
+      <td><a href="https://github.com/terrimporter/PLANiTS_ITSClassifier" target="_blank">PLANiTS ITS Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>LSU</td>
