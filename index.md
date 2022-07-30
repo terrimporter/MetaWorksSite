@@ -81,7 +81,7 @@ layout: default
 	<tr class="table-default">
       <td>SSU (18S)</td>
       <td>Diatoms</td>
-      <td><a href="https://github.com/terrimporter/SSUdiatomClassifier" target="_blank">Diatom SSU Classifier</a></td>
+      <td><a href="https://github.com/terrimporter/SSUdiatomClassifier" target="_blank">Diat.barcode SSU Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>SSU (16S)</td>
@@ -91,7 +91,7 @@ layout: default
 	<tr class="table-default">
       <td>SSU (18S)</td>
       <td>Eukaryotes</td>
-      <td><a href="https://github.com/terrimporter/18SClassifier" target="_blank">Eukaryote 18S Classifier</a></td>
+      <td><a href="https://github.com/terrimporter/18SClassifier" target="_blank">SILVA 18S Classifier</a></td>
     </tr>
 	<tr class="table-default">
       <td>SSU (16S)</td>
