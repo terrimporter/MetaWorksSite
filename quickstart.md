@@ -4,13 +4,14 @@ title: Quickstart
 permalink: /quickstart/
 ---
 
-<h1>Workflow Quickstart</h1>
+<h1>Workflow Quickstarts</h1>
 <br>
-<p>Prior to following these quickstart instructions:<br>
-1. Ensure conda is installed and the MetaWorks environment is activated.<br> 
-2. If you will be doing pseudogene-filtering, then ORFfinder is installed.<br>
-3. If you are using a custom RDP classifier, that it is installed.<br>
-If you are unsure of how to do any of this, please refer to the <a href="../tutorial/">tutorial</a> for step-by-step instructions.</p>
+<h5>Prior to following these quickstart instructions:<h5><br>
+<p>1. Ensure conda is installed and the MetaWorks environment is activated.<br>
+2. If you will be doing pseudogene-filtering, then ORFfinder needs to be installed.<br>
+3. If you are using a custom RDP classifier, ensure it is installed.<br><br>
+
+If you are unsure of how to do any of this, please refer to the <a href="../tutorial/">tutorial</a> for step-by-step instructions.</p><br>
 
 <h5 class="text-info">Default ESV Workflow Quickstart</h5>
 
