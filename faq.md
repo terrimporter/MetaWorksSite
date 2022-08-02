@@ -305,9 +305,9 @@ COI <- read.csv("results.csv", header=TRUE, stringsAsFactors=FALSE)
 
 # filter COI taxonomic assignments for 95% correct species, 99% correct genus & up
 # See <a href="https://github.com/terrimporter/CO1Classifier" target="_blank">https://github.com/terrimporter/CO1Classifier</a> for cutoffs
-COI2$Species <- ifelse(COI2$sBP >= 0.7, COI2$Species, "")
-COI2$Genus <- ifelse(COI2$gBP >= 0.3, COI2$Genus, "")
-COI2$Family <- ifelse(COI2$fBP >= 0.2, COI2$Family, "")
+COI$Species <- ifelse(COI$sBP >= 0.7, COI$Species, "")
+COI$Genus <- ifelse(COI$gBP >= 0.3, COI$Genus, "")
+COI$Family <- ifelse(COI$fBP >= 0.2, COI$Family, "")
 </code></pre>
       </div>
     </div>
