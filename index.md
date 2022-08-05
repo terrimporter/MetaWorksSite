@@ -65,6 +65,11 @@ layout: default
     </tr>
 	<tr class="table-default">
       <td>rbcL</td>
+      <td>Land plants</td>
+      <td><a href="https://github.com/terrimporter/rbcL_landPlant_Classifier" target="_blank">Land plant rbcL Classifier</a></td>
+    </tr>
+	<tr class="table-default">
+      <td>rbcL</td>
       <td>Eukaryotes</td>
       <td><a href="https://github.com/terrimporter/rbcLClassifier" target="_blank">Eukaryote rbcL Classifier</a></td>
     </tr>
