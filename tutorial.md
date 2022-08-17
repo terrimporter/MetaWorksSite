@@ -20,10 +20,10 @@ permalink: /tutorial/
 
 <h5><a id="InstallMetaWorks">Install MetaWorks</a></h5>
 <pre><code># download the pipeline
-wget https://github.com/terrimporter/MetaWorks/releases/download/v1.10.0/MetaWorks1.9.5.tar.gz
+wget https://github.com/terrimporter/MetaWorks/releases/tag/v1.10.0
 
 # unzip the pipeline
-unzip MetaWorks1.9.5.zip
+unzip MetaWorks1.10.0.zip
 </code></pre>
 
 <h5><a id="InstallConda">Install conda</a></h5>
@@ -46,7 +46,7 @@ ln -s ~/miniconda3/bin/conda conda
 
 <h5><a id="ActivateMetaWorksEnv">Activate the MetaWorks conda environment</a></h5>
 <pre><code># Move into the MetaWorks folder
-cd MetaWorks1.9.5
+cd MetaWorks1.10.0
 
 # Create the environment from the provided environment.yml file . Only need to do this step once.
 conda env create -f environment.yml
