@@ -101,7 +101,7 @@ The config_testing_COI_data.yaml file has been 'preset' to work with the COI_dat
 Then you should be ready to run the MetaWorks pipeline on the testing data.
     
 <pre><code># You may need to edit the number of jobs you would like to run, ex --jobs 1 or --jobs 4, according to how many cores you have available
-snakemake --jobs 2 --snakefile snakefile --configfile config_testing_COI_data.yaml
+snakemake --jobs 2 --snakefile snakefile_ESV --configfile config_testing_COI_data.yaml
 </code></pre>
 
 The final output file is called results.csv . The results are for the COI-BR5 amplicon. This can be imported into R for bootstrap support filtering, pivot table creation, normalization, vegan analysis, etc. There are also a number of other output files in the stats directory showing the total number of reads processed at each step as well as the sequence lengths. Log files are also available for the dereplication, denoising, and chimera removal steps.
