@@ -44,11 +44,12 @@ ln -s ~/miniconda3/bin/conda conda
 </code></pre>
 
 # Initialize conda (only need to do this once)
-# Find out what shell you're running
+<pre><code># Find out what shell you're running
 echo $SHELL
 conda init bash
 # Replace 'bash' with whatever shell you're actually running
-# To initialize close then re-open your terminal at this point
+# To initialize the new settings in your shell, close then re-open your terminal at this point
+</code></pre>
 
 <h5><a id="ActivateMetaWorksEnv">Activate the MetaWorks conda environment</a></h5>
 <pre><code># Move into the MetaWorks folder
