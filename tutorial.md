@@ -9,7 +9,7 @@ permalink: /tutorial/
 <h5 class="text-info">Jump to:</h5>
 <h5><a href="#step1">Prepare your environment for the pipeline</a></h5>
 <h5><a href="#InstallMetaWorks">- Install MetaWorks</a></h5>
-<h5><a href="#InstallConda">- Install Conda</a></h5>
+<h5><a href="#InstallConda">- Install & initialize Conda</a></h5>
 <h5><a href="#ActivateMetaWorksEnv">- Activate the MetaWorks environment</a></h5>
 <h5><a href="#InstallClassifier">- Install a custom-trained classifier</a></h5>
 <h5><a href="#InstallORFfinder">- Install ORFfinder</a></h5>
@@ -25,11 +25,11 @@ wget https://github.com/terrimporter/MetaWorks/releases/download/v1.11.0/MetaWor
 unzip MetaWorks1.11.0.zip
 </code></pre>
 
-<h5><a id="InstallConda">Install conda</a></h5>
+<h5><a id="InstallConda">Install & initialize Conda</a></h5>
 <pre><code># Download miniconda3 if you don't already have conda on your system
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
-# Install miniconda3 and initialize
+# Install miniconda3
 sh Miniconda3-latest-Linux-x86_64.sh
 
 # Add conda to your PATH
