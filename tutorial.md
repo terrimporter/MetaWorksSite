@@ -41,10 +41,9 @@ cd ~/bin
 
 # Create symbolic link to conda
 ln -s ~/miniconda3/bin/conda conda
-</code></pre>
 
-# Initialize conda (only need to do this once)
-<pre><code># Find out what shell you're running
+# Initialize conda for the first time (only do this once)
+# Find out what shell you're running
 echo $SHELL
 conda init bash
 # Replace 'bash' with whatever shell you're actually running
