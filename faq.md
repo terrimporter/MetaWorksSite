@@ -267,7 +267,7 @@ screen -r session_id
     </h2>
     <div id="metaCollapseTen" class="accordion-collapse collapse" aria-labelledby="metaHeadingTen" data-parent="#metaworksFAQ">
       <div class="accordion-body">
-<p>If you get a warning and see that the last file created was rdp.csv.tmp but not the expected results.csv then you probably are probably trying to process a very large number of sequence files (thousands) and the job ran into memory problems preventing the creation of the final results.csv file. You have a few options here:</p>
+<p>If you get a warning and see that the last file created was rdp.csv.tmp but not the expected results.csv then you probably are probably trying to process a very large number of sequence files (thousands) and the job ran into memory problems preventing the creation of the final results.csv file. You have a couple options here:</p>
 <p>a) Re-run the pipeline where there is more memory available so that the final outfile can be created. On the GPSC, you will need to create an interactive container, activate the conda environbment, then unlock the snakemake directory first before submitting another job with more memory on a large compute node.</p>
 <p>b) Stop here. You can still use the ESV.table file together with the taxonomy.csv file for further processing in R. Both files are indexed by the same ESV ids.</p>
 <p>There is a new MetaWorks workflow being created that handles analyses with very large number of samples more efficiently (in progress).</p>
