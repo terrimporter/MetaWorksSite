@@ -6,7 +6,7 @@ permalink: /faq/
 
 <h1>Frequently Asked Questions</h1>
 <br>
-<h2>Metaworks FAQs</h2>
+<h2>MetaWorks FAQs</h2>
 <div class="accordion" id="metaworksFAQ">
   <div class="accordion-item">
     <h2 class="accordion-header" id="metaHeadingOne">
