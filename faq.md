@@ -79,7 +79,11 @@ vsearch --version
     </h2>
     <div id="metaCollapseThree" class="accordion-collapse collapse" aria-labelledby="metaHeadingThree" data-parent="#metaworksFAQ">
       <div class="accordion-body">
-<p>If you have an older version of GLIBC (on Centos6), then you may be missing the libc.so.6 file that ORffinder needs. This file is already available, but you need to create some links yourself.</p>
+<p>If you have an older version of GLIBC (on Centos6), then you may be missing the libc.so.6 file that ORffinder needs. Ideally, you would contact your system administrator to make a newer version of GLIBC available for ORFfinder.  Not ideal, but in a pinch you can use conda to install a slightly newer version of GLIBC that will work and create some links so ORF finder knows where to find it.  I've tested this solution and it works, but it does affect the versions of CUTADAPT and VSEARCH compatible with this GLIBC version in your conda environment (use 'conda list' to check program versions).</p>
+        
+<p>Use conda to install a slighly newer version of GLIBC</p>
+        
+<pre><code>conda install -c pwwang glibc214</code></pre>
 
 <p>Create a symbolic link to the library:</p>
 
@@ -119,7 +123,10 @@ export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
             </h2>
             <div id="metaCollapseFour" class="accordion-collapse collapse" aria-labelledby="metaHeadingFour" data-parent="#metaworksFAQ">
               <div class="accordion-body">
-<p>The missing library (on Centos7), is already available, only the LD_LIBRARY_PATH needs to be updated as follows:</p>
+<p>The missing library (on Centos7) can be installed using conda and the LD_LIBRARY_PATH needs to be updated as follows:</p>
+ 
+<p>Install libnghttp2 using conda</p>
+<pre><code>conda install -c conda-forge libnghttp2</code></pre>
 
 <p>Create the shell script file LD_PATH.sh in the following location to set the environment variable: ~/miniconda3/envs/MetaWorks_v1.10.0/etc/conda/activate.d/LD_PATH.sh</p>
 
@@ -229,22 +236,26 @@ screen -r session_id
     </h2>
     <div id="metaCollapseNine" class="accordion-collapse collapse" aria-labelledby="metaHeadingNine" data-parent="#metaworksFAQ">
       <div class="accordion-body">
-<p>If you are targeting a broad group, such as Metazoa using COI primers, you can still filter out pseudogenes using removal method 1 that uses ORFfinder. This can be done in two steps, for example by first processing invertebrate phyla, then processing phylum chordata that includes the vertebrata clade (see NCBI taxonomy). Note that pseudogene removal method 2 that uses HMMer is currently only available for COI arthropoda at this time.</p>
+<p>If you are targeting a broad group, such as Metazoa using COI primers, you can still filter out pseudogenes using removal method 1 that uses ORFfinder. This needs to be done in two steps because vertebrates and invertebrates each have different mitochondrial genetic codes.</p>
 
-<p>1. Edit the config_ESV.yaml file as follows:  
+<p>1. Edit the config_ESV.yaml file as follows to process vertebrates first:  
 
-Set the taxonomy filter to '-e Annelida -e Arthropoda -e Bryozoa -e Cnidaria -e Echinodermata -e Mollusca -e Nematoda -e Nematomorpha -e Nemertea -e Platyhelminthes -e Porifera' to target invertebrate animal phyla  
+Set the taxon filter to '-e Chordata' to target vertebrate animal phyla  
 Set pseudogene removal method 1 (only uses ORFfinder)  
-Set genetic code to '5' to use the invertebrate mitochondrial genetic code for translation  
-Run snakemake. Move invertebrate outfiles into their own directory so they do not get over-written: taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta*, rdp.csv.tmp, results.csv.</p>
-
-<p>2. Edit the config_ESV.yaml file as follows:  
-Set the taxonomy filter to '-e Chordata' to target animals with a notochord (includes the Vertebrata clade) (see NCBI taxonomy)  
-Keep pseudogene removal method 1  
 Set genetic code to '2' to use the vertebrate mitochondrial genetic code for translation  
-Run snakemake. Move chordata outfiles into their own directory so they do not get over-written: taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta*, rdp.csv.tmp, results.csv .</p>
+Run snakemake. 
+When done, create a new directory called chordata 'mkdir vertebrates'.
+Use 'ls -lhrt' to list files.  Move each file AFTER cat.denoised.nonchimeras into a the vertebrates directory so they do not get over-written in the next step: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
 
-<p>The invertebrate and chordata results.csv files can then be combined prior to downstream processing.</p>
+<p>2. Edit the config_ESV.yaml file to process invertebrates next:  
+Set the taxon filter to '-e Metazoa rdp.out.tmp | grep -v Chordata' to process all metazoan taxa, excluding Chordata (already processed above). 
+Keep pseudogene removal method 1  
+Set genetic code to '5' to use the invertebrate mitochondrial genetic code for translation. 
+Run snakemake. 
+When done, create a new directory called invertebrates 'mkdir invertebrates'.
+Use 'ls -lhrt' to list files.  Move each file AFTER cat.denoised.nonchimeras into the invertebrates directory: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
+
+<p>The vertebrates and invertebrates results.csv files (or the component taxonomy.csv and ESV.table files) can then be combined in R during data analysis using 'rbind'.</p>
       </div>
     </div>
   </div>
