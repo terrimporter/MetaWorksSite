@@ -244,7 +244,7 @@ screen -r session_id
 <p>Set genetic code to '2' to use the vertebrate mitochondrial genetic code for translation.</p>
 <p>Run snakemake.</p>
 <p>When done, create a new directory called chordata 'mkdir vertebrates'.</p> 
-<p>Use 'ls -lhrt' to list files.  Move each file AFTER cat.denoised.nonchimeras into a the vertebrates directory so they do not get over-written in the next step: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
+<p>Use 'ls -lhrt' to list files.  Move each file AFTER cat.denoised.nonchimeras & rdp.out.tmp into a the vertebrates directory so they do not get over-written in the next step: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
 
 <p>2. Edit the config_ESV.yaml file to process invertebrates next:</p>
 <p>Set the taxon filter to '-e Metazoa rdp.out.tmp | grep -v Chordata' to process all metazoan taxa, excluding Chordata (already processed above).</p>  
@@ -252,7 +252,7 @@ screen -r session_id
 <p>Set genetic code to '5' to use the invertebrate mitochondrial genetic code for translation.</p>
 <p>Run snakemake.</p>
 <p>When done, create a new directory called invertebrates 'mkdir invertebrates'.</p> 
-<p>Use 'ls -lhrt' to list files.  Move each file AFTER cat.denoised.nonchimeras into the invertebrates directory: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
+<p>Use 'ls -lhrt' to list files.  Move each file AFTER cat.denoised.nonchimeras & rdp.out.tmp into the invertebrates directory: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
 
 <p>The vertebrates and invertebrates results.csv files (or the component taxonomy.csv and ESV.table files) can then be combined in R during data analysis using 'rbind'.</p>
       </div>
