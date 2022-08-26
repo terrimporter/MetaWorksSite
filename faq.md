@@ -238,21 +238,21 @@ screen -r session_id
       <div class="accordion-body">
 <p>If you are targeting a broad group, such as Metazoa using COI primers, you can still filter out pseudogenes using removal method 1 that uses ORFfinder. This needs to be done in two steps because vertebrates and invertebrates each have different mitochondrial genetic codes.</p>
 
-<p>1. Edit the config_ESV.yaml file as follows to process vertebrates first:  
+<p>1. Edit the config_ESV.yaml file as follows to process vertebrates first:   
 
-Set the taxon filter to '-e Chordata' to target vertebrate animal phyla  
-Set pseudogene removal method 1 (only uses ORFfinder)  
-Set genetic code to '2' to use the vertebrate mitochondrial genetic code for translation  
-Run snakemake. 
-When done, create a new directory called chordata 'mkdir vertebrates'.
+Set the taxon filter to '-e Chordata' to target vertebrate animal phyla.    
+Set pseudogene removal method 1 (only uses ORFfinder).  
+Set genetic code to '2' to use the vertebrate mitochondrial genetic code for translation.  
+Run snakemake.    
+When done, create a new directory called chordata 'mkdir vertebrates'.  
 Use 'ls -lhrt' to list files.  Move each file AFTER cat.denoised.nonchimeras into a the vertebrates directory so they do not get over-written in the next step: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
 
 <p>2. Edit the config_ESV.yaml file to process invertebrates next:  
-Set the taxon filter to '-e Metazoa rdp.out.tmp | grep -v Chordata' to process all metazoan taxa, excluding Chordata (already processed above). 
-Keep pseudogene removal method 1  
-Set genetic code to '5' to use the invertebrate mitochondrial genetic code for translation. 
-Run snakemake. 
-When done, create a new directory called invertebrates 'mkdir invertebrates'.
+Set the taxon filter to '-e Metazoa rdp.out.tmp | grep -v Chordata' to process all metazoan taxa, excluding Chordata (already processed above).  
+Keep pseudogene removal method 1.  
+Set genetic code to '5' to use the invertebrate mitochondrial genetic code for translation.  
+Run snakemake.  
+When done, create a new directory called invertebrates 'mkdir invertebrates'.  
 Use 'ls -lhrt' to list files.  Move each file AFTER cat.denoised.nonchimeras into the invertebrates directory: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
 
 <p>The vertebrates and invertebrates results.csv files (or the component taxonomy.csv and ESV.table files) can then be combined in R during data analysis using 'rbind'.</p>
