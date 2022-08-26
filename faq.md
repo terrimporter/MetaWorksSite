@@ -67,7 +67,6 @@ cutadapt --version
 vsearch --version
 </code></pre>
 
-<p>Version numbers are also tracked in the snakefile.</p>
       </div>
     </div>
   </div>
