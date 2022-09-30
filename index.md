@@ -159,7 +159,7 @@ layout: default
 
 <p>The MetaWorks pipeline and approach:</p> 
 
-<p>Porter, T.M., Hajibabaei, M. 2020. <a href="https://doi.org/10.1101/2020.07.14.202960" target="_blank">METAWORKS: A flexible, scalable bioinformatic pipeline for multi-marker biodiversity assessments</a>. bioRxiv, doi:10.1101/2020.07.14.202960</p>
+<p>Porter, T. M., & Hajibabaei, M. (2022). MetaWorks: A flexible, scalable bioinformatic pipeline for high-throughput multi-marker biodiversity assessments. PLOS ONE, 17(9), e0274260. doi: 10.1371/journal.pone.0274260</p>
 
 <p>The MetaWorks code:</p>
 
