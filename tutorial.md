@@ -20,7 +20,7 @@ permalink: /tutorial/
 
 <h5><a id="InstallMetaWorks">Install MetaWorks</a></h5>
 <pre><code># download the pipeline
-wget https://github.com/terrimporter/MetaWorks/releases/download/v1.11.1/MetaWorks1.11.2.zip
+wget https://github.com/terrimporter/MetaWorks/releases/download/v1.11.2/MetaWorks1.11.2.zip
 # unzip the pipeline
 unzip MetaWorks1.11.2.zip
 </code></pre>
