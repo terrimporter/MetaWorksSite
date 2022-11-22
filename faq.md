@@ -332,7 +332,7 @@ COI$Family <- ifelse(COI$fBP >= 0.2, COI$Family, "")
         <h5 class="text-info">Extracted ITS and ORF sequences in the results.csv file are not unique</h5>
       </button>
     </h2>
-    <div id="dataCollapseOne" class="accordion-collapse collapse" aria-labelledby="dataHeadingOne" data-parent="#dataAnalysisFAQ">
+    <div id="dataCollapseOne" class="accordion-collapse collapse" aria-labelledby="dataHeadingThree" data-parent="#dataAnalysisFAQ">
       <div class="accordion-body">
 <p>The ESV x sample table is generated before ITS extraction or pseudogene filtering so you may see a number of GlobalESV IDs associated with the same trimmed ITS or ORF sequence, which become identical after trimming, but those original denoised ESVs were unique.  For convenience, the extracted ITS and good ORF sequences are provided in the results.csv file (this may be changed in future versions).  If you wish to conduct further analyses with the unique ESVs (full length sequences before ITS or pseudogene trimming) then you can 'look up' the GlobalESV from the results.csv file to find the matching sequences from the cat.denoised.nonchimeras FASTA file.  Note that you should not use the cat.denoised.nonchimeras file as is, as it will contain sequences with no taxonomic assignment because ITSx filtering failed, or because they represent pseudogenes.</p>
       </div>
