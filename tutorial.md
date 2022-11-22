@@ -20,9 +20,9 @@ permalink: /tutorial/
 
 <h5><a id="InstallMetaWorks">Install MetaWorks</a></h5>
 <pre><code># download the pipeline
-wget https://github.com/terrimporter/MetaWorks/releases/download/v1.11.2/MetaWorks1.11.2.zip
+wget https://github.com/terrimporter/MetaWorks/releases/download/v1.11.3/MetaWorks1.11.3.zip
 # unzip the pipeline
-unzip MetaWorks1.11.2.zip
+unzip MetaWorks1.11.3.zip
 </code></pre>
 
 <h5><a id="InstallConda">Install & initialize Conda</a></h5>
@@ -52,13 +52,13 @@ conda init bash
 
 <h5><a id="ActivateMetaWorksEnv">Activate the MetaWorks conda environment</a></h5>
 <pre><code># Move into the MetaWorks folder
-cd MetaWorks1.11.2
+cd MetaWorks1.11.3
 
 # Create the environment from the provided environment.yml file . Only need to do this step once.
 conda env create -f environment.yml
 
 # Activate the environment. Do this everytime before running the pipeline.
-conda activate MetaWorks_v1.11.2
+conda activate MetaWorks_v1.11.3
 </code></pre>
 
 <h5><a id="InstallClassifier">Install a custom-trained classifier</a></h5>
