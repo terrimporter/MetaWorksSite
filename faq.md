@@ -239,22 +239,22 @@ screen -r session_id
 
 <p>1. Edit the config_ESV.yaml file as follows to process vertebrates first:</p>   
 
-<p>Set the taxon filter to '-e Chordata' to target vertebrate animal phyla.</p>  
+<p>Set the grep search type to 1 and taxon1 to '-e Chordata' to target vertebrate animal phyla.</p>
 <p>Set pseudogene removal method 1 (only uses ORFfinder).</p>
 <p>Set genetic code to '2' to use the vertebrate mitochondrial genetic code for translation.</p>
 <p>Run snakemake.</p>
-<p>When done, create a new directory called chordata 'mkdir vertebrates'.</p> 
-<p>Use 'ls -lhrt' to list files.  Move each file AFTER rdp.out.tmp into a the vertebrates directory so they do not get over-written in the next step: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
+<p>When done, create a new directory called chordata 'mkdir Chordata'.</p> 
+<p>Use 'ls -lhrt' to list files.  Move each file AFTER rdp.out.tmp into a the Chordata directory so they do not get over-written in the next step: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
 
 <p>2. Edit the config_ESV.yaml file to process invertebrates next:</p>
-<p>Set the taxon filter to '-e Metazoa rdp.out.tmp | grep -v Chordata' to process all metazoan taxa, excluding Chordata (already processed above).</p>  
+<p>Set the greap search type to 2 and taxon1 to '-e Metazoa' and taxon2 to '-v Chordata' to process all metazoan taxa, excluding Chordata (already processed above).</p>  
 <p>Keep pseudogene removal method 1.</p>
 <p>Set genetic code to '5' to use the invertebrate mitochondrial genetic code for translation.</p>
 <p>Run snakemake.</p>
-<p>When done, create a new directory called invertebrates 'mkdir invertebrates'.</p> 
-<p>Use 'ls -lhrt' to list files.  Move each file AFTER rdp.out.tmp into the invertebrates directory: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
+<p>When done, create a new directory called Invertebrates 'mkdir Invertebrates'.</p> 
+<p>Use 'ls -lhrt' to list files.  Move each file AFTER rdp.out.tmp into the Invertebrates directory: table.log, taxon.zotus, chimera.denoised.nonchimeras.taxon, orf.fasta.nt, longest.orfs.fasta, taxonomy.csv, ESV.table, results.csv.</p>
 
-<p>The vertebrates and invertebrates results.csv files (or the component taxonomy.csv and ESV.table files) can then be combined in R during data analysis using 'rbind'.</p>
+<p>The Chordata and Invertebrates results.csv files (or the component taxonomy.csv and ESV.table files) can then be combined in R during data analysis using 'rbind'.</p>
       </div>
     </div>
   </div>
