@@ -145,10 +145,6 @@ layout: default
 
 <p>Moir, C. 2021. <a href="https://hdl.handle.net/10214/25791" target="_blank">No Stomach, No Problem: an Integrated Morpho-Molecular Approach to Assessing the Diets of the Cunner Wrasse, Tautogolabrus adspersus, among Coastal, Nearshore Regions of Atlantic Canada</a> (Doctoral dissertation, University of Guelph).</p>
 
-<p>Porter, TM & Hajibabaei, M, 2022. <a href="https://doi.org/10.1371/journal.pone.0274260" target="_blank">MetaWorks: A flexible, scalable bioinformatic pipeline for high-throughput multi-marker biodiversity assessments</a>. PLoS ONE, 17(9), e0274260.</p>
-
-Porter, T. M., & Hajibabaei, M. (2022). MetaWorks: A flexible, scalable bioinformatic pipeline for high-throughput multi-marker biodiversity assessments. Plos one, 17(9), e0274260.
-
 <p>Porter, TM, & Hajibabaei, M. (2021). <a href="https://doi.org/10.1186/s12859-021-04180-x" target="_blank">Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets</a>. BMC Bioinformatics, 22(1): 256. doi:10.1186/s12859-021-04180-x</p>
 
 <p>Robinson, CV, Baird, DJ, Wright, MTG, Porter, TM, Hartwig, K, Hendriks, E, Maclean, L, Mallinson, R, Monk, WA, Paquette, C and Hajibabaei, M. 2021. <a href="https://doi.org/10.1016/j.pecon.2021.03.001" target="_blank">Combining DNA and people power for healthy rivers: Implementing the STREAM community-based approach for global freshwater monitoring. Perspectives in Ecology and Conservation</a>, 19(3): 279-285. doi:10.1016/j.pecon.2021.03.001</p>
