@@ -327,7 +327,7 @@ COI$Family <- ifelse(COI$fBP >= 0.2, COI$Family, "")
     
 
   <div class="accordion-item">
-    <h2 class="accordion-header" id="dataHeadingOne">
+    <h2 class="accordion-header" id="dataHeadingThree">
       <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#dataCollapseOne" aria-expanded="false" aria-controls="dataCollapseOne">
         <h5 class="text-info">Extracted ITS and ORF sequences in the results.csv file are not unique</h5>
       </button>
