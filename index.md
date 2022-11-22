@@ -139,21 +139,27 @@ layout: default
 
 <h2>Papers and Projects That Use MetaWorks</h2>
 
+<p>Edge, C., Baker, L., Smenderovac, E., Heartz, S., & Emilson, E. 2022. <a href="https://link.springer.com/article/10.1007/s10646-022-02582-y" target="_blank">Tebufenozide has limited direct effects on simulated aquatic communities.</a> Ecotoxicology, 31(8), 1231-1240.</p>
+
 <p>Edge TA, Baird DJ, Bilodeau G, Gagné N, Greer C, Konkin D, et al. 2020.  <a href="https://doi.org/10.1016/j.scitotenv.2019.135906" target="_blank">The Ecobiomics project: Advancing metagenomics assessment of soil health and freshwater quality in Canada</a>. Science of The Total Environment, 710: 135906. doi:10.1016/j.scitotenv.2019.135906</p>
 
 <p>Moir, C. 2021. <a href="https://hdl.handle.net/10214/25791" target="_blank">No Stomach, No Problem: an Integrated Morpho-Molecular Approach to Assessing the Diets of the Cunner Wrasse, Tautogolabrus adspersus, among Coastal, Nearshore Regions of Atlantic Canada</a> (Doctoral dissertation, University of Guelph).</p>
 
-<p>Porter, TM & Hajibabaei, M, 2020. <a href="https://doi.org/10.1101/2020.07.14.202960" target="_blank">METAWORKS: A flexible, scalable bioinformatic pipeline for multi-marker biodiversity assessments</a>. bioRxiv, doi:10.1101/2020.07.14.202960</p>
+<p>Porter, TM & Hajibabaei, M, 2022. <a href="https://doi.org/10.1371/journal.pone.0274260" target="_blank">MetaWorks: A flexible, scalable bioinformatic pipeline for high-throughput multi-marker biodiversity assessments</a>. PLoS ONE, 17(9), e0274260.</p>
+
+Porter, T. M., & Hajibabaei, M. (2022). MetaWorks: A flexible, scalable bioinformatic pipeline for high-throughput multi-marker biodiversity assessments. Plos one, 17(9), e0274260.
 
 <p>Porter, TM, & Hajibabaei, M. (2021). <a href="https://doi.org/10.1186/s12859-021-04180-x" target="_blank">Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets</a>. BMC Bioinformatics, 22(1): 256. doi:10.1186/s12859-021-04180-x</p>
 
-<p>Robinson, CV, Baird, DJ, Wright, MTG, Porter, TM, Hartwig, K, Hendriks, E, Maclean, L, Mallinson, R, Monk, WA, Paquette, C and Hajibabaei, M. 2021. <a href="https://doi.org/10.1016/j.pecon.2021.03.001" target="blank">Combining DNA and people power for healthy rivers: Implementing the STREAM community-based approach for global freshwater monitoring. Perspectives in Ecology and Conservation</a>, 19(3): 279-285. doi:10.1016/j.pecon.2021.03.001</p>
+<p>Robinson, CV, Baird, DJ, Wright, MTG, Porter, TM, Hartwig, K, Hendriks, E, Maclean, L, Mallinson, R, Monk, WA, Paquette, C and Hajibabaei, M. 2021. <a href="https://doi.org/10.1016/j.pecon.2021.03.001" target="_blank">Combining DNA and people power for healthy rivers: Implementing the STREAM community-based approach for global freshwater monitoring. Perspectives in Ecology and Conservation</a>, 19(3): 279-285. doi:10.1016/j.pecon.2021.03.001</p>
 
-<p>Robinson, CV, Porter, TM, Maitland, VC, Wright, MT and Hajibabaei, M. 2021. <a href="https://doi.org/10.1101/2021.11.14.468533" target="blank">Multi-marker metabarcoding resolves subtle variations in freshwater condition: Bioindicators, ecological traits, and trophic interactions</a>. bioRxiv, doi:10.1101/2021.11.14.468533</p>
+<p>Robinson, CV, Porter, TM, Maitland, VC, Wright, MT and Hajibabaei, M. 2022. <a href="https://doi.org/10.1016/j.ecolind.2022.109603" target="_blank">Multi-marker metabarcoding resolves subtle variations in freshwater condition: Bioindicators, ecological traits, and trophic interactions</a>. Ecological Indicators, 145, 109603.</p>
 
-<p>Rudar, J, Golding, GB, Kremer, SC and Hajibabaei, M. 2022. <a href="https://doi.org/10.1101/2022.03.31.486647" target="blank">Decision Tree Ensembles Utilizing Multivariate Splits Are Effective at Investigating Beta-Diversity in Medically Relevant 16S Amplicon Sequencing Data.</a> bioRxiv, doi:10.1101/2022.03.31.486647</p>
+<p>Rudar, J, Golding, GB, Kremer, SC and Hajibabaei, M. 2022. <a href="https://doi.org/10.1101/2022.03.31.486647" target="_blank">Decision Tree Ensembles Utilizing Multivariate Splits Are Effective at Investigating Beta-Diversity in Medically Relevant 16S Amplicon Sequencing Data.</a> bioRxiv, doi:10.1101/2022.03.31.486647</p>
 
 <p>Smenderovac E, Emilson C, Porter T, Morris D, Hazlett P, Diochon A, et al. 2022.  <a href="https://doi.org/10.1038/s41598-022-07670-x" target="_blank">Forest soil biotic communities show few responses to wood ash applications at multiple sites across Canada.</a> Sci Rep., 12: 4171. doi:10.1038/s41598-022-07670-x</p>
+
+<p>Smenderovac, E., Hoage, J., Porter, T. M., Emilson, C., Fleming, R., Basiliko, N., ... & Venier, L. (2023). <a href="https://doi.org/10.1016/j.foreco.2022.120636" target="_blank">Boreal forest soil biotic communities are affected by harvesting, site preparation with no additional effects of higher biomass removal 5 years post-harvest.</a> Forest Ecology and Management, 528, 120636.</p>
 
 <h2>How to Cite</h2>
 
