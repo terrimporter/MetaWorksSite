@@ -64,10 +64,10 @@ conda activate MetaWorks_v1.12.0
 <h5><a id="InstallClassifier">Install a custom-trained classifier</a></h5>
 
 <pre><code># download the COIv4 classifier
-wget https://github.com/terrimporter/CO1Classifier/releases/download/v4/CO1v4_trained.tar.gz
+wget https://github.com/terrimporter/CO1Classifier/releases/download/RDP-COI-v5.0.0/RDP_COIv5.0.0.zip
 
 # decompress the file
-tar -xvzf CO1v4_trained.tar.gz
+unzip RDP_COIv5.0.0.zip
 
 # Note the full path to the rRNAClassifier.properties file, ex. mydata_trained/rRNAClassifier.properties
 </code></pre>
