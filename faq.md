@@ -153,12 +153,12 @@ export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
     </div>
   </div>
   <div class="accordion-item">
-            <h2 class="accordion-header" id="metaHeadingFour">
+            <h2 class="accordion-header" id="metaHeadingFourFive">
               <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#metaCollapseFour" aria-expanded="false" aria-controls="metaCollapseFour">
                 <h5 class="text-info">How do I fix a missing libdw.so.1 library error when trying to run ORFfinder?</h5>
               </button>
             </h2>
-            <div id="metaCollapseFour" class="accordion-collapse collapse" aria-labelledby="metaHeadingFour" data-parent="#metaworksFAQ">
+            <div id="metaCollapseFour" class="accordion-collapse collapse" aria-labelledby="metaHeadingFourFive" data-parent="#metaworksFAQ">
               <div class="accordion-body">
 
 <p>The missing library can be installed using conda and the LD_LIBRARY_PATH needs to be updated as follows:</p>
