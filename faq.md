@@ -312,6 +312,23 @@ screen -r session_id
       </div>
     </div>
   </div>
+  
+      <div class="accordion-item">
+    <h2 class="accordion-header" id="metaHeadingEleven">
+      <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#metaCollapseEleven" aria-expanded="false" aria-controls="metaCollapseEleven">
+        <h5 class="text-info">Directory cannot be locked error in snakemake</h5>
+      </button>
+    </h2>
+    <div id="metaCollapseEleven" class="accordion-collapse collapse" aria-labelledby="metaHeadingEleven" data-parent="#metaworksFAQ">
+      <div class="accordion-body">
+<p>When snakemake begins, it locks the directory to prevent another snakemake instance from overwriting files.  If a snakemake run was interruped, for example if you closed your laptop or lost power, the directory remains locked and won't let you re-start a run.  To fix this enter your usual snakemake command but append --unlock at the end.  Once that is done, run your usual snakemake command.</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
 </div>
 <br>
 <h2>Data Analysis FAQs</h2>
@@ -379,17 +396,6 @@ COI$Family <- ifelse(COI$fBP >= 0.2, COI$Family, "")
   </div>
     
     
-    <div class="accordion-item">
-    <h2 class="accordion-header" id="dataHeadingThreeFour">
-      <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#dataCollapseThreeFour" aria-expanded="false" aria-controls="dataCollapseThreeFour">
-        <h5 class="text-info">Directory cannot be locked error in snakemake</h5>
-      </button>
-    </h2>
-    <div id="dataCollapseThreeFour" class="accordion-collapse collapse" aria-labelledby="dataHeadingThreeFour" data-parent="#dataAnalysisFAQ">
-      <div class="accordion-body">
-<p>When snakemake begins, it locks the directory to prevent another snakemake instance from overwriting files.  If a snakemake run was interruped, for example if you closed your laptop or lost power, the directory remains locked and won't let you re-start a run.  To fix this enter your usual snakemake command but append --unlock at the end.  Once that is done, run your usual snakemake command.</p>
-      </div>
-    </div>
-  </div>
+
       
 </div>
