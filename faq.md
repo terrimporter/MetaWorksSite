@@ -122,10 +122,49 @@ export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
             </h2>
             <div id="metaCollapseFour" class="accordion-collapse collapse" aria-labelledby="metaHeadingFour" data-parent="#metaworksFAQ">
               <div class="accordion-body">
+
 <p>The missing library (on Centos7) can be installed using conda and the LD_LIBRARY_PATH needs to be updated as follows:</p>
  
 <p>Install libnghttp2 using conda</p>
 <pre><code>conda install -c conda-forge libnghttp2</code></pre>
+
+<p>Create the shell script file LD_PATH.sh in the following location to set the environment variable: ~/miniconda3/envs/MetaWorks_v1.11.1/etc/conda/activate.d/LD_PATH.sh</p>
+
+<p>Put the following text in the LD_PATH.sh file:</p>
+
+<pre><code>export LD_LIBRARY_PATH_CONDA_BACKUP=$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
+</code></pre>
+
+<p>Create the file LD_PATH.sh in the following location to unset the environment variable:  
+~/miniconda3/envs/MetaWorks_v1.11.1/etc/conda/deactivate.d/LD_PATH.sh</p>
+
+<p>Put the following text in the LD_PATH.sh file:</p>
+
+<pre><code>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH_CONDA_BACKUP
+</code></pre>
+
+<p>Deactivate then reactivate the environment.</p>
+
+<p>Test ORFfinder:</p>
+
+<pre><code>ORFfinder</code></pre>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+            <h2 class="accordion-header" id="metaHeadingFour">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#metaCollapseFour" aria-expanded="false" aria-controls="metaCollapseFour">
+                <h5 class="text-info">How do I fix a missing libdw.so.1 library error when trying to run ORFfinder?</h5>
+              </button>
+            </h2>
+            <div id="metaCollapseFour" class="accordion-collapse collapse" aria-labelledby="metaHeadingFour" data-parent="#metaworksFAQ">
+              <div class="accordion-body">
+
+<p>The missing library can be installed using conda and the LD_LIBRARY_PATH needs to be updated as follows:</p>
+ 
+<p>Install libdw.so.1 using conda</p>
+<pre><code>conda install -c conda-forge elfutils</code></pre>
 
 <p>Create the shell script file LD_PATH.sh in the following location to set the environment variable: ~/miniconda3/envs/MetaWorks_v1.11.1/etc/conda/activate.d/LD_PATH.sh</p>
 
