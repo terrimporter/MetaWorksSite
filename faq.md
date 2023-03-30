@@ -328,6 +328,23 @@ screen -r session_id
   
   
   
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="metaHeadingTwelve">
+      <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#metaCollapseTwelve" aria-expanded="false" aria-controls="metaCollapseTwelve">
+        <h5 class="text-info">Java heap error when running MetaWorks with the COI Classifier v5</h5>
+      </button>
+    </h2>
+    <div id="metaCollapseTwelve" class="accordion-collapse collapse" aria-labelledby="metaHeadingTwelve" data-parent="#metaworksFAQ">
+      <div class="accordion-body">
+<p>Because the COI Classifier v5 contains so many more taxa than v4, it needs more memory to run.  Try increasing the amount of memory available from 8g to 16g.  In the configuration file, section 'Taxonomic Assignment' -> 'RDP' -> 'memory' change -Xmx8g to -Xmx16g .</p>
+      </div>
+    </div>
+  </div>
+  
+  
+ 
+  
+  
   
 </div>
 <br>
