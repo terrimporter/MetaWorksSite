@@ -147,7 +147,7 @@ layout: default
 
 <p>Porter, TM, & Hajibabaei, M. 2021. <a href="https://doi.org/10.1186/s12859-021-04180-x" target="_blank">Profile hidden Markov model sequence analysis can help remove putative pseudogenes from DNA barcoding and metabarcoding datasets</a>. BMC Bioinformatics, 22(1): 256. doi:10.1186/s12859-021-04180-x</p>
 
-<p>Porter, T.M., Smenderovac, E., Morris, D., Venier, L. 2022.  <a href="https://doi.org/10.1101/2022.11.18.517085" target="_blank">All boreal forest successional stages needed to maintain the full suite of soil biodiversity following natural wildfire in jack pine-dominated forest ecosites</a>. BioRxiv, https://doi.org/10.1101/2022.11.18.517085</p>
+<p>Porter, T.M., Smenderovac, E., Morris, D., Venier, L. 2023.  <a href="https://doi.org/10.1101/2022.11.18.517085" target="_blank">All boreal forest successional stages needed to maintain the full suite of soil biodiversity, community composition, and function following wildfire</a>. Scientific Reports: 13, 7978.  doi.org/10.1038/s41598-023-30732-7</p>
 
 <p>Robinson, CV, Baird, DJ, Wright, MTG, Porter, TM, Hartwig, K, Hendriks, E, Maclean, L, Mallinson, R, Monk, WA, Paquette, C and Hajibabaei, M. 2021. <a href="https://doi.org/10.1016/j.pecon.2021.03.001" target="_blank">Combining DNA and people power for healthy rivers: Implementing the STREAM community-based approach for global freshwater monitoring. Perspectives in Ecology and Conservation</a>, 19(3): 279-285. doi:10.1016/j.pecon.2021.03.001</p>
 
