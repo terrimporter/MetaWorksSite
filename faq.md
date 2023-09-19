@@ -340,6 +340,22 @@ screen -r session_id
       </div>
     </div>
   </div>
+
+
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="metaHeadingThirteen">
+      <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#metaCollapseThirteen" aria-expanded="false" aria-controls="metaCollapseThirteen">
+        <h5 class="text-info">The final results.csv file isn't being written</h5>
+      </button>
+    </h2>
+    <div id="metaCollapseThirteen" class="accordion-collapse collapse" aria-labelledby="metaHeadingThirteen" data-parent="#metaworksFAQ">
+      <div class="accordion-body">
+<p>It takes a lot of memory to produce the final file that incorporates both the taxonomic assignments and ESV/OTU table.  In the configuration file, consider selecting output option 2 instead of 1 that produces a separate ESV/OTU table and taxonomy file.  </p>
+      </div>
+    </div>
+  </div>
   
   
  
