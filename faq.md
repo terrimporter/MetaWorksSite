@@ -29,10 +29,10 @@ cd ~/bin
 ln -s ~/miniconda3/bin/conda conda
 
 # Activate conda method 1 (working in a container)
-source ~/miniconda3/bin/activate MetaWorks_v1.11.1
+source ~/miniconda3/bin/activate MetaWorks_v1.13.0
 
 # Activate conda method 2
-conda activate MetaWorks_v1.11.1
+conda activate MetaWorks_v1.13.0
 </code></pre>
       </div>
     </div>
@@ -51,7 +51,7 @@ conda activate MetaWorks_v1.11.1
 conda env create -f environment.yml
 
 # activate the environment
-conda activate MetaWorks_v1.11.1
+conda activate MetaWorks_v1.13.0
 
 # list all programs available in the environment at once
 conda list > programs.list
@@ -86,11 +86,11 @@ vsearch --version
 
 <p>Create a symbolic link to the library:</p>
 
-<pre><code>cd ~/miniconda3/envs/MetaWorks_v1.11.1/lib
+<pre><code>cd ~/miniconda3/envs/MetaWorks_v1.13.0/lib
 ln -s ../glibc-2.14/lib/libc.so.6 libc.so.6
 </code></pre>
 
-<p>Create the shell script file LD_PATH.sh in the following location to set the environment variable: ~/miniconda3/envs/MetaWorks_v1.11.1/etc/conda/activate.d/LD_PATH.sh</p>
+<p>Create the shell script file LD_PATH.sh in the following location to set the environment variable: ~/miniconda3/envs/MetaWorks_v1.13.0/etc/conda/activate.d/LD_PATH.sh</p>
 
 <p>Put the following text in the LD_PATH.sh file:</p>
 
@@ -99,7 +99,7 @@ export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
 </code></pre>
 
 <p>Create the file LD_PATH.sh in the following location to unset the environment variable:  
-~/miniconda3/envs/MetaWorks_v1.11.1/etc/conda/deactivate.d/LD_PATH.sh </p>
+~/miniconda3/envs/MetaWorks_v1.13.0/etc/conda/deactivate.d/LD_PATH.sh </p>
 
 <p>Put the following text in the LD_PATH.sh file:</p>
 
@@ -128,7 +128,7 @@ export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
 <p>Install libnghttp2 using conda</p>
 <pre><code>conda install -c conda-forge libnghttp2</code></pre>
 
-<p>Create the shell script file LD_PATH.sh in the following location to set the environment variable: ~/miniconda3/envs/MetaWorks_v1.11.1/etc/conda/activate.d/LD_PATH.sh</p>
+<p>Create the shell script file LD_PATH.sh in the following location to set the environment variable: ~/miniconda3/envs/MetaWorks_v1.13.0/etc/conda/activate.d/LD_PATH.sh</p>
 
 <p>Put the following text in the LD_PATH.sh file:</p>
 
@@ -137,7 +137,7 @@ export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
 </code></pre>
 
 <p>Create the file LD_PATH.sh in the following location to unset the environment variable:  
-~/miniconda3/envs/MetaWorks_v1.11.1/etc/conda/deactivate.d/LD_PATH.sh</p>
+~/miniconda3/envs/MetaWorks_v1.13.0/etc/conda/deactivate.d/LD_PATH.sh</p>
 
 <p>Put the following text in the LD_PATH.sh file:</p>
 
@@ -166,7 +166,7 @@ export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
 <p>Install libdw.so.1 using conda</p>
 <pre><code>conda install -c conda-forge elfutils</code></pre>
 
-<p>Create the shell script file LD_PATH.sh in the following location to set the environment variable: ~/miniconda3/envs/MetaWorks_v1.11.1/etc/conda/activate.d/LD_PATH.sh</p>
+<p>Create the shell script file LD_PATH.sh in the following location to set the environment variable: ~/miniconda3/envs/MetaWorks_v1.13.0/etc/conda/activate.d/LD_PATH.sh</p>
 
 <p>Put the following text in the LD_PATH.sh file:</p>
 
@@ -175,7 +175,7 @@ export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
 </code></pre>
 
 <p>Create the file LD_PATH.sh in the following location to unset the environment variable:  
-~/miniconda3/envs/MetaWorks_v1.11.1/etc/conda/deactivate.d/LD_PATH.sh</p>
+~/miniconda3/envs/MetaWorks_v1.13.0/etc/conda/deactivate.d/LD_PATH.sh</p>
 
 <p>Put the following text in the LD_PATH.sh file:</p>
 
@@ -251,7 +251,7 @@ ln -s /path/to/script/script.sh commandName
 <pre><code># to start a screen session
 screen
 ctrl+a+c
-conda activate MetaWorks_v1.11.1
+conda activate MetaWorks_v1.13.0
 snakemake --jobs 24 --snakefile snakefile --configfile config.yaml
 ctrl+a+d
 
